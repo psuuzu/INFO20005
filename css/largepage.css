@@ -1,0 +1,135 @@
+/* min width for desktop version: 800px */
+:root{
+    --hovercolour:#E41A1A;
+    --lightgrey: #D9D9D9;
+    --darkgrey: #4f4f4f;
+}
+
+h1{
+    font-size: 25px;
+    font-family: orbitron;
+}
+
+h2{
+    font-size: 18px;
+    font-family: orbitron;
+}
+
+/* center content */
+.flex {
+    display: flex;
+    /* vertical */
+    align-items: center;  
+    /* horizontal */
+    justify-content: center; 
+}
+
+/* center the content filling up whole width*/
+.center{
+    width: 100%; 
+    height: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;  
+}
+
+/* the search bar box covers/contians the input and the button */
+.searchbar{
+    height: 42px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    background-color: var(--lightgrey);
+    border-radius: 10px;
+    margin: auto;
+}
+
+#searchinput{
+    height: 40px;
+    width: 35vw;
+    border-radius: 10px;
+    background-color: var(--lightgrey) ;
+    margin: auto;
+    border: 0ch;
+    padding-left: 1vw; 
+    font-size: 14px;
+}
+
+
+/* Remove the border of searchinput when typing or clicked */
+#searchinput:focus {
+    outline: none; 
+    border-color: transparent; 
+}
+
+a {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+#searchbutton{
+    width: 79px;
+    height: 42px;
+    border-radius: 10px;
+    display: flex;
+    background-color: var(--darkgrey);
+    align-items: center;  
+    justify-content: center;
+}
+
+#searchbutton:hover {
+    background-color: var(--hovercolour); /* Change background color on hover */
+}
+
+.navbaritem{
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border-bottom: 2px solid transparent;
+    font-size: 20px;
+    font-family: Orbitron;
+    color: black;
+    text-decoration: none;
+}
+
+.navbaritem:hover{
+    border-bottom: 2px solid black;
+}
+
+
+#footer{
+    background-color: var(--darkgrey);
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+footer h2{
+    font-size: 18px;
+    font-family: Orbitron;
+    color: white;
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+footer p{
+    font-size: 12px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: normal;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+body{
+    width: 100vw;
+}
