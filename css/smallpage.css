@@ -1,8 +1,17 @@
-/* min width for desktop version: 800px */
+/*  __________________ */
+/* ~|GENERAL PAGE CSS|~ */
+/*  -------------------- */
+
+
 :root{
     --hovercolour:#E41A1A;
     --lightgrey: #D9D9D9;
     --darkgrey: #4f4f4f;
+}
+
+
+body{
+    width: 100vw;
 }
 
 h1{
@@ -15,14 +24,6 @@ h2{
     font-family: orbitron;
 }
 
-/* center content */
-.flex {
-    display: flex;
-    /* vertical */
-    align-items: center;  
-    /* horizontal */
-    justify-content: center; 
-}
 
 /* center the content filling up whole width*/
 .center{
@@ -32,10 +33,29 @@ h2{
     justify-content: center;
     align-items: center;  
 }
+/*   ___________________ */
+/* ~|HEADER CSS CONTENT|~ */
+/*  -------------------- */
 
+/* make images smaller as original file dimentions are too large (as described in comments from assignment 2) */
+header img.icon{
+    width: auto;
+    height: auto;
+    max-width: 65%;
+    max-height: 65%;
+}
+
+/* center content in header */
+header {
+    display: flex;
+    /* vertical */
+    align-items: center;  
+    /* horizontal */
+    justify-content: center; 
+}
 /* the search bar box covers/contians the input and the button */
 .searchbar{
-    height: 42px;
+    height: 37px;
     display: flex;
     align-items: center; 
     justify-content: center;
@@ -45,7 +65,7 @@ h2{
 }
 
 #searchinput{
-    height: 40px;
+    height: 35px;
     width: 35vw;
     border-radius: 10px;
     background-color: var(--lightgrey) ;
@@ -69,8 +89,8 @@ a {
 }
 
 #searchbutton{
-    width: 79px;
-    height: 42px;
+    width: 70px;
+    height: 37px;
     border-radius: 10px;
     display: flex;
     background-color: var(--darkgrey);
@@ -99,18 +119,20 @@ a {
 .navbaritem:hover{
     border-bottom: 2px solid black;
 }
-
+/*  ____________________ */
+/* ~|FOOTER CSS CONTENT|~ */
+/*  -------------------- */
 
 #footer{
     background-color: var(--darkgrey);
     width: 100%;
     height: 100%;
-    justify-content: space-evenly;
     align-items: flex-start;
     display: flex; 
     flex-direction: column;
     justify-content: center;
     align-items: center;  
+    padding-bottom: 20px;
 }
 
 footer h2{
@@ -118,7 +140,7 @@ footer h2{
     font-family: Orbitron;
     color: white;
     font-weight: normal;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
@@ -129,6 +151,30 @@ footer p{
     font-weight: normal;
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+footer img.icon {
+    width: auto;
+    height: auto;
+    max-width: 35%;
+    max-height: 35%;
+}
+img.icon[src$="paypal.png"] {
+    width: auto; 
+    height: auto; 
+    max-width: 25%; 
+    max-height: 25%;
+}
+
+img.icon[src$="visamaster (1).png"] {
+    width: auto; 
+    height: auto; 
+    max-width: 55%;
+    max-height: 55%;
+}
+
+.imagespacing{
+    margin-top: 20px;
 }
 
 #footerpmargin{
@@ -143,8 +189,3 @@ footer p{
 
 
 
-
-
-body{
-    width: 100%;
-}
