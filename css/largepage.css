@@ -8,7 +8,6 @@
     --darkgrey: #4f4f4f;
 }
 
-
 body{
     width: 100vw;
 }
@@ -64,6 +63,7 @@ header{
     margin: auto;
 }
 
+/* the space where user input their search  */
 #searchinput{
     height: 35px;
     width: 35vw;
@@ -82,11 +82,13 @@ header{
     border-color: transparent; 
 }
 
+/* organise items in buttons */
 a {
     display: flex; 
     justify-content: center;
     align-items: center;
 }
+
 
 #searchbutton{
     width: 70px;
@@ -101,6 +103,15 @@ a {
 #searchbutton:hover {
     background-color: var(--hovercolour); /* Change background color on hover */
 }
+
+/* remove mobile version icons */
+.mobileheadicon{
+    display: none;
+}
+
+/*   ___________________ */
+/* ~|NAVBAR CSS CONTENT|~ */
+/*  -------------------- */
 
 .navbaritem{
     padding-left: 1vw;
@@ -148,10 +159,7 @@ footer p{
     margin-bottom: 5px;
 }
 
-#footerp{
-    margin-top: 30px;
-}
-
+/* resizing icons */
 footer img.icon {
     width: auto;
     height: auto;
@@ -172,6 +180,7 @@ img.icon[src$="visamaster (1).png"] {
     max-height: 55%;
 }
 
+/* spaces out image in footer vertically */
 .imagespacing{
     margin-top: 50px;
 }

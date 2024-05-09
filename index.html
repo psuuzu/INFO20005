@@ -15,21 +15,28 @@
     <div class="center">
        <!-- aligns everything inside header horizontally -->
         <header>
-       <!-- logo -->
-            <a href="index.html" id="home"><img src="files/logo.png" alt="Maxx Gaming Logo" style="margin: 2vw"></a>
+       <!-- logo at desktop version, displays menu and cart at mobile version-->
+
+            <div class="mobileheader">
+                <!-- menu icon size does not need to be adjusted so theres no icon class -->
+                <a class="mobileheadicon" style="margin-left: 3vw;"><img src="files/menu.png" alt="cart"></a>
+                <a href="index.html"><img src="files/logo.png" alt="Maxx Gaming Logo" style="margin: 3vw"></a>
+                <a href="html/cart.html" class="mobileheadicon" style="margin-right: 5vw;"><img class="icon" src="files/cart.png" alt="cart"></a>
+            </div>
+    
             <!-- searchbar -->
             <div class="searchbar">
                 <input type="text" name="searchinput" placeholder="search" id="searchinput">
                 <a href="html/shop.html" id="searchbutton"><img class="icon" src="files/search.png" alt="searchbutton"></a>
             </div>
-            <!-- profile and cart -->
-            <a style="padding-left: 2vw;"><img class="icon" src="files/profile.png" alt="profile"></a>
-            <a style="padding-left: 2vw;"><img class="icon" src="files/cart.png" alt="cart"></a>
+            <!-- profile and cart, hide at mobile version -->
+            <a style="padding-left: 2vw;" id="deskprofile"><img class="icon" src="files/profile.png" alt="profile"></a>
+            <a style="padding-left: 2vw;" href="html/cart.html" id="deskcart"><img class="icon" src="files/cart.png" alt="cart"></a>
 
        
         </header>
     </div>
-    <nav class="center">
+    <nav class="center" id="desknav">
         <a href="html/shop.html" class="navbaritem">Shop</a>
         <a class="navbaritem">Pre-Order</a>
         <a class="navbaritem">Trade In</a>
@@ -62,6 +69,4 @@
         </div>
     </footer>
 </body>
-
-
 </html>

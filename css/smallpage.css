@@ -47,13 +47,15 @@ header img.icon{
 
 /* center content in header */
 header {
+    width: 100%;
     display: flex;
     /* vertical */
     align-items: center;  
     /* horizontal */
     justify-content: center; 
+    flex-direction: column;
 }
-/* the search bar box covers/contians the input and the button */
+/* note: the search bar box covers/contians the input and the button */
 .searchbar{
     height: 37px;
     display: flex;
@@ -61,12 +63,13 @@ header {
     justify-content: center;
     background-color: var(--lightgrey);
     border-radius: 10px;
-    margin: auto;
+    margin-bottom: 10px;
+    
 }
-
+/* the space where user input their search  */
 #searchinput{
     height: 35px;
-    width: 35vw;
+    width: 70vw;
     border-radius: 10px;
     background-color: var(--lightgrey) ;
     margin: auto;
@@ -82,6 +85,7 @@ header {
     border-color: transparent; 
 }
 
+/* organise items in buttons */
 a {
     display: flex; 
     justify-content: center;
@@ -102,23 +106,36 @@ a {
     background-color: var(--hovercolour); /* Change background color on hover */
 }
 
-.navbaritem{
-    padding-left: 1vw;
-    padding-right: 1vw;
-    padding-top: 5px;
-    padding-bottom: 10px;
-    margin-left: 1vw;
-    margin-right: 1vw;
-    border-bottom: 2px solid transparent;
-    font-size: 20px;
-    font-family: Orbitron;
-    color: black;
-    text-decoration: none;
+/* hide desktop version profile icon */
+#deskprofile{
+    display: none;
 }
 
-.navbaritem:hover{
-    border-bottom: 2px solid black;
+/* hide desktop version cart icon */
+#deskcart{
+    display: none;
 }
+
+/* space out the menu, logo and cart icon in mobile */
+.mobileheader{
+    width: 100vw;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+
+
+/*   ___________________ */
+/* ~|NAVBAR CSS CONTENT|~ */
+/*  -------------------- */
+
+/* hide nav bar  */
+#desknav{
+    display: none;
+}
+
 /*  ____________________ */
 /* ~|FOOTER CSS CONTENT|~ */
 /*  -------------------- */
@@ -153,6 +170,7 @@ footer p{
     margin-bottom: 5px;
 }
 
+/* resizing icons */
 footer img.icon {
     width: auto;
     height: auto;
@@ -173,14 +191,12 @@ img.icon[src$="visamaster (1).png"] {
     max-height: 55%;
 }
 
+/* spaces out image in footer vertically */
 .imagespacing{
     margin-top: 20px;
 }
 
-#footerpmargin{
-    margin-top: 15px;
-}
-
+/* all elements in footer aligns center */
 #footercontent > *{
     display: flex;
     justify-content: center;
