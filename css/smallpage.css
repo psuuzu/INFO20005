@@ -33,6 +33,19 @@ h2{
     justify-content: center;
     align-items: center;  
 }
+
+/*   _______________________ */
+/* ~|MOBILE MENU CSS CONTENT|~ */
+/*  ------------------------- */
+
+.menu{
+    position: absolute;
+    width: 80vw;
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    background-color: white;
+}
 /*   ___________________ */
 /* ~|HEADER CSS CONTENT|~ */
 /*  -------------------- */

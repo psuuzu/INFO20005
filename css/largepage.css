@@ -31,6 +31,14 @@ h2{
     justify-content: center;
     align-items: center;  
 }
+/*   _______________________ */
+/* ~|MOBILE MENU CSS CONTENT|~ */
+/*  ------------------------- */
+
+.menu{
+    display: none;
+}
+
 /*   ___________________ */
 /* ~|HEADER CSS CONTENT|~ */
 /*  -------------------- */
