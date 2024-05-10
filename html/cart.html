@@ -11,15 +11,20 @@
 
 </head>
 <body>
+     <!-- menu for mobile version -->
+     <div id="menu">
+        <div class="menu">
+            <p>hi</p>
+        </div>
+    </div>
        <!-- centers the header -->
     <div class="center">
-       <!-- aligns everything inside header horizontally -->
         <header>
        <!-- logo at desktop version, displays menu and cart at mobile version-->
 
             <div class="mobileheader">
                 <!-- menu icon size does not need to be adjusted so theres no icon class -->
-                <a class="mobileheadicon" style="margin-left: 3vw;"><img src="../files/menu.png" alt="cart"></a>
+                <a class="mobileheadicon" style="margin-left: 3vw;" onclick="openmenu()"><img src="../files/menu.png" alt="cart"></a>
                 <a href="../index.html"><img src="../files/logo.png" alt="Maxx Gaming Logo" style="margin: 3vw"></a>
                 <a href="html/cart.html" class="mobileheadicon" style="margin-right: 5vw;"><img class="icon" src="../files/cart.png" alt="cart"></a>
             </div>
@@ -32,10 +37,11 @@
             <!-- profile and cart, hide at mobile version -->
             <a style="padding-left: 2vw;" id="deskprofile"><img class="icon" src="../files/profile.png" alt="profile"></a>
             <a style="padding-left: 2vw;" href="cart.html" id="deskcart"><img class="icon" src="../files/cart.png" alt="cart"></a>
-
-       
         </header>
     </div>
+    <!-- ______________________________ -->
+    <!-- CONTENT OF EACH PAGE GOES HERE -->
+    <!-- ------------------------------ -->
     <nav class="center" id="desknav">
         <a href="shop.html" class="navbaritem">Shop</a>
         <a class="navbaritem">Pre-Order</a>
@@ -68,5 +74,6 @@
             </div>
         </div>
     </footer>
+    <script src="../javascript/menu.js"></script>
 </body>
 </html>
