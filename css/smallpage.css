@@ -3,25 +3,32 @@
 /*   _______________________ */
 /* ~|MOBILE MENU CSS CONTENT|~ */
 /*  ------------------------- */
-#menu{
-    display:none;
-    position: absolute;
-}
 .menu{
+    position: absolute;
+    
+}
+#menu{
     position: fixed;
-    top: 0;
-    width: 80vw;
-    height: 50vh;
+    top: -100px;
+    width: 100vw;
+    height: 100px;
     display:flex;
     flex-direction: column;
     background-color: white;
-    animation: menuslide;
+    animation-name: ;
     animation-duration: 0.4s;
+    animation-fill-mode: forwards;
 }
 
-@keyframes menuslide {
-    from{left: -80vw;}
-    to{left:0vw;}
+/* define slide in and out positions */
+@keyframes slidein {
+    from{top: -100px;}
+    to{top:114px;}
+}
+
+@keyframes slideout {
+    from{top:114px;}
+    to{top: -100px;}
 }
 /*   ___________________ */
 /* ~|HEADER CSS CONTENT|~ */

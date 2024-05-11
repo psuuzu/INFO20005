@@ -22,6 +22,10 @@ h2{
     font-family: orbitron;
 }
 
+p{
+    font-size: 12px;
+    font-family: sans-serif;
+}
 /* center the content filling up whole width*/
 .center{
     width: 100%; 
@@ -29,4 +33,11 @@ h2{
     display: flex; 
     justify-content: center;
     align-items: center;  
+}
+
+/* set rules for sticky components, set background to white so elements will hide under the stick element */
+.sticky{
+    position: sticky;
+    top: 0;
+    background-color: white;
 }
