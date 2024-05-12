@@ -1,0 +1,176 @@
+@import url(global.css);
+/*   _______________________ */
+/* ~|MOBILE MENU CSS CONTENT|~ */
+/*  ------------------------- */
+
+#menu{
+    display: none;
+}
+
+/*   ___________________ */
+/* ~|HEADER CSS CONTENT|~ */
+/*  -------------------- */
+
+/* make images smaller as original file dimentions are too large (as described in comments from assignment 2) */
+header img.icon{
+    width: auto;
+    height: auto;
+    max-width: 65%;
+    max-height: 65%;
+}
+
+/* logo margin */
+#logo{
+    margin-left: 3vw; 
+    margin-right: 3vw;
+}
+
+/* center content in header */
+header{
+    display: flex;
+    /* vertical */
+    align-items: center;  
+    /* horizontal */
+    justify-content: center; 
+}
+
+/* the search bar box covers/contians the input and the button */
+.searchbar{
+    height: 37px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    background-color: var(--lightgrey);
+    border-radius: 10px;
+    margin: auto;
+}
+
+/* the space where user input their search  */
+#searchinput{
+    height: 35px;
+    width: 35vw;
+    border-radius: 10px;
+    background-color: var(--lightgrey) ;
+    margin: auto;
+    border: 0ch;
+    padding-left: 1vw; 
+    font-size: 14px;
+}
+
+
+/* Remove the border of searchinput when typing or clicked */
+#searchinput:focus {
+    outline: none; 
+    border-color: transparent; 
+}
+
+/* organise items in buttons */
+a {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+
+#searchbutton{
+    width: 70px;
+    height: 37px;
+    border-radius: 10px;
+    display: flex;
+    background-color: var(--darkgrey);
+    align-items: center;  
+    justify-content: center;
+}
+
+#searchbutton:hover {
+    background-color: var(--hovercolour); /* Change background color on hover */
+}
+
+/* remove mobile version icons */
+.mobileheadicon{
+    display: none;
+}
+
+/*   ___________________ */
+/* ~|NAVBAR CSS CONTENT|~ */
+/*  -------------------- */
+
+.navbaritem{
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border-bottom: 2px solid transparent;
+    font-size: 20px;
+    font-family: Orbitron;
+    color: black;
+    text-decoration: none;
+}
+
+.navbaritem:hover{
+    border-bottom: 2px solid black;
+}
+/*  ____________________ */
+/* ~|FOOTER CSS CONTENT|~ */
+/*  -------------------- */
+
+#footer{
+    background-color: var(--darkgrey);
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+footer h2{
+    font-size: 18px;
+    font-family: Orbitron;
+    color: white;
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+footer p{
+    font-size: 12px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: normal;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* resizing icons */
+footer img.icon {
+    width: auto;
+    height: auto;
+    max-width: 35%;
+    max-height: 35%;
+}
+img.icon[src$="paypal.png"] {
+    width: auto; 
+    height: auto; 
+    max-width: 25%; 
+    max-height: 25%;
+}
+
+img.icon[src$="visamaster (1).png"] {
+    width: auto; 
+    height: auto; 
+    max-width: 55%;
+    max-height: 55%;
+}
+
+/* spaces out image in footer vertically */
+.imagespacing{
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+
