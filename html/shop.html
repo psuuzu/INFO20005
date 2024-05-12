@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maxx Gaming</title>
-    <link rel="stylesheet" media="(max-width: 800px)" href="css/smallpage.css">
-    <link rel="stylesheet" media="(min-width: 801px)" href="css/largepage.css">
+    <link rel="stylesheet" media="(max-width: 800px)" href="../css/smallpage.css">
+    <link rel="stylesheet" media="(min-width: 801px)" href="../css/largepage.css">
         <!-- import orbitron font style -->
     <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+
 </head>
 <body>
        <!-- centers the header -->
@@ -15,41 +16,40 @@
         <header>
             <!-- menu for mobile version -->
             <div id="menu">
-                <a class="menubutton" href="html/shop.html"><h2>Shop</h2></a>
+                <a class="menubutton" href="shop.html"><h2>Shop</h2></a>
                 <a class="menubutton"><h2>Pre-order</h2></a>
                 <a class="menubutton"><h2>Trade in</h2></a>
                 <a class="menubutton"><h2>About us</h2></a>
                 <a class="menubutton"><h2>Account</h2></a>
             </div>
-            <!-- logo at desktop version, displays menu, logo and cart at mobile version-->
+             <!-- logo at desktop version, displays menu, logo and cart at mobile version-->
             <div class="mobileheader">
                 <!-- menu icon size does not need to be adjusted so theres no icon class -->
-                <a class="mobileheadicon" style="margin-left: 3vw;" onclick="openmenu()"><img src="files/menu.png" alt="cart"></a>
-                <a href="index.html"><img src="files/logo.png" alt="Maxx Gaming Logo" id="logo"></a>
-                <a href="html/cart.html" class="mobileheadicon" style="margin-right: 5vw;"><img class="icon" src="files/cart.png" alt="cart"></a>
+                <a class="mobileheadicon" style="margin-left: 3vw;" onclick="openmenu()"><img src="../files/menu.png" alt="cart"></a>
+                <a href="../index.html"><img src="../files/logo.png" alt="Maxx Gaming Logo" id="logo"></a>
+                <a href="cart.html" class="mobileheadicon" style="margin-right: 5vw;"><img class="icon" src="../files/cart.png" alt="cart"></a>
             </div>
     
             <!-- searchbar -->
             <div class="searchbar">
                 <input type="text" name="searchinput" placeholder="search" id="searchinput">
-                <a href="html/shop.html" id="searchbutton"><img class="icon" src="files/search.png" alt="searchbutton"></a>
+                <a href="shop.html" id="searchbutton"><img class="icon" src="../files/search.png" alt="searchbutton"></a>
             </div>
             <!-- profile and cart, hide at mobile version since format is different-->
-            <a style="padding-left: 2vw;" id="deskprofile"><img class="icon" src="files/profile.png" alt="profile"></a>
-            <a style="padding-left: 2vw;" href="html/cart.html" id="deskcart"><img class="icon" src="files/cart.png" alt="cart"></a>
+            <a style="padding-left: 2vw;" id="deskprofile"><img class="icon" src="../files/profile.png" alt="profile"></a>
+            <a style="padding-left: 2vw;" href="cart.html" id="deskcart"><img class="icon" src="../files/cart.png" alt="cart"></a>
         </header>
     </div>
     <nav class="center" id="desknav">
-        <a href="html/shop.html" class="navbaritem">Shop</a>
+        <a href="shop.html" class="navbaritem">Shop</a>
         <a class="navbaritem">Pre-Order</a>
         <a class="navbaritem">Trade In</a>
         <a class="navbaritem">About Us</a>
     </nav>
-
     <!-- ______________________________ -->
     <!-- CONTENT OF EACH PAGE GOES HERE -->
     <!-- ------------------------------ -->
-
+    <h1>Shop</h1>
     <footer class="center" id="footer">
         <div style="margin-bottom: 10px;" id="footercontent">
             <h2>Location</h2>
@@ -64,18 +64,18 @@
         <div id="footercontent">
             <h2>We Accept</h2>
             <div class="imagespacing">
-                <img class="icon" src="files/visamaster (1).png" alt="visa and mastercard">
-                <img class="icon" src="files/paypal.png" alt="paypal">
+                <img class="icon" src="../files/visamaster (1).png" alt="visa and mastercard">
+                <img class="icon" src="../files/paypal.png" alt="paypal">
             </div>
         </div>
         <div id="footercontent">
             <h2>Social Media</h2>
             <div class="imagespacing">
-                <img class="icon" src="files/insta.png" alt="instagram">
-                <img class="icon" src="files/facebook.png" alt="facebook">
+                <img class="icon" src="../files/insta.png" alt="instagram">
+                <img class="icon" src="../files/facebook.png" alt="facebook">
             </div>
         </div>
     </footer>
-    <script src="javascript/menu.js"></script>
+    <script src="../javascript/menu.js"></script>
 </body>
 </html>

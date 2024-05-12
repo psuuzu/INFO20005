@@ -3,32 +3,48 @@
 /*   _______________________ */
 /* ~|MOBILE MENU CSS CONTENT|~ */
 /*  ------------------------- */
-.menu{
-    position: absolute;
-    
-}
+
 #menu{
     position: fixed;
-    top: -100px;
+    top: -500px;
+    /* height of the menu */
     width: 100vw;
-    height: 100px;
-    display:flex;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
     flex-direction: column;
     background-color: white;
-    animation-name: ;
+    animation-name: "";
     animation-duration: 0.4s;
     animation-fill-mode: forwards;
+    padding: 10px; /* Applies padding to all sides */
 }
 
 /* define slide in and out positions */
 @keyframes slidein {
-    from{top: -100px;}
-    to{top:114px;}
+    from{top: -500px;}
+    to{top: 108px;}
 }
 
 @keyframes slideout {
-    from{top:114px;}
-    to{top: -100px;}
+    from{top: 108px;}
+    to{top: -500px;}
+}
+
+.menubutton{
+    width: 90vw;
+    height: 80px;
+    border: 0;
+    border-radius: 10px;
+    background-color: var(--darkgrey);
+    color: white;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+.menubutton:hover{
+    background-color: var(--hovercolour);
 }
 /*   ___________________ */
 /* ~|HEADER CSS CONTENT|~ */
@@ -40,6 +56,14 @@ header img.icon{
     height: auto;
     max-width: 65%;
     max-height: 65%;
+}
+
+/* logo margin  */
+#logo{
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* center content in header */
@@ -61,7 +85,6 @@ header {
     background-color: var(--lightgrey);
     border-radius: 10px;
     margin-bottom: 10px;
-    
 }
 /* the space where user input their search  */
 #searchinput{
@@ -74,7 +97,6 @@ header {
     padding-left: 1vw; 
     font-size: 14px;
 }
-
 
 /* Remove the border of searchinput when typing or clicked */
 #searchinput:focus {
@@ -120,7 +142,6 @@ a {
     align-items: center; 
     justify-content: space-between;
     flex-direction: row;
-
 }
 
 

@@ -19,6 +19,12 @@ header img.icon{
     max-height: 65%;
 }
 
+/* logo margin */
+#logo{
+    margin-left: 3vw; 
+    margin-right: 3vw;
+}
+
 /* center content in header */
 header{
     display: flex;

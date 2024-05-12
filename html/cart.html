@@ -11,21 +11,23 @@
 
 </head>
 <body>
-     <!-- menu for mobile version -->
-     <div class="menu">
-        <div id="menu">
-            <p>hi</p>
-        </div>
-    </div>
        <!-- centers the header -->
     <div class="center sticky">
         <header>
-       <!-- logo at desktop version, displays menu and cart at mobile version-->
+            <!-- menu for mobile version -->
+            <div id="menu">
+                <a class="menubutton" href="shop.html"><h2>Shop</h2></a>
+                <a class="menubutton"><h2>Pre-order</h2></a>
+                <a class="menubutton"><h2>Trade in</h2></a>
+                <a class="menubutton"><h2>About us</h2></a>
+                <a class="menubutton"><h2>Account</h2></a>
+            </div>
+             <!-- logo at desktop version, displays menu, logo and cart at mobile version-->
             <div class="mobileheader">
                 <!-- menu icon size does not need to be adjusted so theres no icon class -->
                 <a class="mobileheadicon" style="margin-left: 3vw;" onclick="openmenu()"><img src="../files/menu.png" alt="cart"></a>
-                <a href="../index.html"><img src="../files/logo.png" alt="Maxx Gaming Logo" style="margin: 3vw"></a>
-                <a href="html/cart.html" class="mobileheadicon" style="margin-right: 5vw;"><img class="icon" src="../files/cart.png" alt="cart"></a>
+                <a href="../index.html"><img src="../files/logo.png" alt="Maxx Gaming Logo" id="logo"></a>
+                <a href="cart.html" class="mobileheadicon" style="margin-right: 5vw;"><img class="icon" src="../files/cart.png" alt="cart"></a>
             </div>
     
             <!-- searchbar -->
@@ -33,7 +35,7 @@
                 <input type="text" name="searchinput" placeholder="search" id="searchinput">
                 <a href="shop.html" id="searchbutton"><img class="icon" src="../files/search.png" alt="searchbutton"></a>
             </div>
-            <!-- profile and cart, hide at mobile version -->
+            <!-- profile and cart, hide at mobile version since format is different-->
             <a style="padding-left: 2vw;" id="deskprofile"><img class="icon" src="../files/profile.png" alt="profile"></a>
             <a style="padding-left: 2vw;" href="cart.html" id="deskcart"><img class="icon" src="../files/cart.png" alt="cart"></a>
         </header>
@@ -47,6 +49,7 @@
     <!-- ______________________________ -->
     <!-- CONTENT OF EACH PAGE GOES HERE -->
     <!-- ------------------------------ -->
+    <h1>Cart</h1>
     <footer class="center" id="footer">
         <div style="margin-bottom: 10px;" id="footercontent">
             <h2>Location</h2>

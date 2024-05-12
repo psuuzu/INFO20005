@@ -9,22 +9,24 @@
 }
 
 body{
-    width: 100vw;
+    width: 100%;
 }
 
 h1{
-    font-size: 25px;
+    font-size: 20px;
     font-family: orbitron;
 }
 
 h2{
-    font-size: 18px;
+    font-size: 16px;
     font-family: orbitron;
+    font-weight: normal;
 }
 
 p{
     font-size: 12px;
     font-family: sans-serif;
+    font-weight: normal;
 }
 /* center the content filling up whole width*/
 .center{
@@ -32,12 +34,11 @@ p{
     height: 100%;
     display: flex; 
     justify-content: center;
-    align-items: center;  
 }
 
 /* set rules for sticky components, set background to white so elements will hide under the stick element */
 .sticky{
     position: sticky;
-    top: 0;
+    top: 0%;
     background-color: white;
 }
