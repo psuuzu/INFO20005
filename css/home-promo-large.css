@@ -1,0 +1,66 @@
+@import url(global.css);
+/* define promotion component into grid */
+.grid{
+    width: 90vw;
+    height: 33vw;
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-column-gap: 1vw;
+}
+
+/* define large image container */
+.largeimage{
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* make image fit the width of container */
+.largeimage img{
+    height: auto;
+    width: 100%;
+}
+
+/* small promotion has two images, define its layout */
+.smallpromo{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* define small image containter */
+.smallimage{
+    /* set z index to negative as somehow it scrolls onto the header */
+    z-index: 1;
+    position:relative;
+    max-width: 100%;
+    width: auto;
+    height: 16vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* make image fit the width of container */
+.smallimage img{
+    height: auto;
+    width: 100%;
+}
+
+/* button for cycling through promo images */
+.promoswitch{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:3vw;
+    background-color: var(--darkgrey);
+    color:white;
+    font-family: sans-serif;
+    font-size: 25px;
+}

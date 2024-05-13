@@ -12,3 +12,7 @@ function openmenu() {
     }
 }
 
+
+function hi(){
+    console.log("hi")
+}
