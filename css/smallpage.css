@@ -154,6 +154,33 @@ a {
     display: none;
 }
 
+
+/*  ____________________ */
+/* ~|PAGE CSS CONTENT|~ */
+/*  -------------------- */
+
+#marginleft{
+    margin-left: 2.5vw;
+}
+
+h1{
+    font-size: 18px;
+    font-family: orbitron;
+    font-weight: normal;
+}
+
+h2{
+    font-size: 14px;
+    font-family: orbitron;
+    font-weight: normal;
+}
+
+p{
+    font-size: 10px;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
 /*  ____________________ */
 /* ~|FOOTER CSS CONTENT|~ */
 /*  -------------------- */

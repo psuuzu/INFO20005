@@ -112,6 +112,32 @@ a {
 .navbaritem:hover{
     border-bottom: 2px solid black;
 }
+
+
+/*  ____________________ */
+/* ~|PAGE CSS CONTENT|~ */
+/*  -------------------- */
+#marginleft{
+    margin-left: 5vw;
+}
+
+h1{
+    font-size: 20px;
+    font-family: orbitron;
+    font-weight: normal;
+}
+
+h2{
+    font-size: 16px;
+    font-family: orbitron;
+    font-weight: normal;
+}
+
+p{
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: normal;
+}
 /*  ____________________ */
 /* ~|FOOTER CSS CONTENT|~ */
 /*  -------------------- */

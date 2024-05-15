@@ -12,22 +12,6 @@ body{
     width: 100%;
 }
 
-h1{
-    font-size: 20px;
-    font-family: orbitron;
-}
-
-h2{
-    font-size: 16px;
-    font-family: orbitron;
-    font-weight: normal;
-}
-
-p{
-    font-size: 12px;
-    font-family: sans-serif;
-    font-weight: normal;
-}
 /* center the content filling up whole width*/
 .center{
     width: 100%; 

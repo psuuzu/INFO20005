@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maxx Gaming</title>
+    <!-- large and small page css (that contains consistent css throughout the whole website) -->
     <link rel="stylesheet" media="(max-width: 800px)" href="css/smallpage.css">
     <link rel="stylesheet" media="(min-width: 801px)" href="css/largepage.css">
+    <!-- promotions component -->
+    <link rel="stylesheet" media="(max-width: 800px)" href="css/home-promo-small.css">
     <link rel="stylesheet" media="(min-width: 801px)" href="css/home-promo-large.css">
+    <!-- category component -->
+    <link rel="stylesheet" media="(max-width: 800px)" href="css/home-category-small.css">
+    <link rel="stylesheet" media="(min-width: 801px)" href="css/home-category-large.css">
         <!-- import orbitron font style -->
     <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
 </head>
@@ -50,10 +56,13 @@
     <!-- ______________________________ -->
     <!-- CONTENT OF EACH PAGE GOES HERE -->
     <!-- ------------------------------ -->
+    <!-- promotions component -->
     <div class="center">
         <div class="grid">
             <div class="largeimage">
                 <img src="files/promo/promo1.jpg" alt="promotion1" id="promo1">
+                <!-- button to switch promotions is on the main image for mobile version -->
+                <a class="promoswitch" onclick="imagecycle()" id="smallpromoswitch">→</a>
             </div>
             <div class="smallpromo">
                 <div class="smallimage">
@@ -66,10 +75,18 @@
             </div>
         </div>
     </div>
-    <h1>shop</h1>
+    <h1 id="marginleft">Shop by Category</h1>
+    <!-- categories component -->
+    <div>
+        <a class="circle center">
+            <img src="files/Categories/nintendo.png" alt="nintendo">
+        </a>
+
+    </div>
+
+    <h2 id="marginleft">Shop by Category</h2>
     <p>adjfasdf</p>
-    <a onclick="hi()">hi</a>
-    <a href="html/cart.html">asd</a>
+
     
 
 
