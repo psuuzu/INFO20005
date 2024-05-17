@@ -1,26 +1,41 @@
 @import url(global.css);
 
-@import url(global.css);
 
+/* horizontal scroll of categories */
 .categoryscroll{
-    width: 95vw;
+    max-width: 90vw;
+    width: 90vw;
+    height:100px;
     height: auto;
     overflow-x: auto;
     display: flex;
     scrollbar-width: none;
 }
+
+/* displays categories in a row */
 .category{
     display: flex;
     flex-direction: row;
-    position: relative;
 }
+
+/* contains circle and title */
+.circlecontainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.circlecontainer p{
+    font-size: 15px;
+}
+
+
 /* categories circle */
 .circle{
     border-radius: 50%;
     background-color: var(--darkgrey);
-    max-width: 100px;
+    max-width: 90px;
     min-width: 70px;
-    max-height: 100px;
+    max-height: 90px;
     min-height: 70px;
     width: 10vw;
     height:10vw;
@@ -36,4 +51,17 @@
 
 .circle:hover{
     background-color: var(--hovercolour);
+}
+
+#scrollbuttonL{
+
+    width:5vw;
+    min-width: 5vw;
+    
+}
+
+#scrollbuttonR{
+   
+    width:5vw;
+    min-width: 5vw;
 }

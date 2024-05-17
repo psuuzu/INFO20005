@@ -77,34 +77,59 @@
     </div>
     <h1 class="marginleft">Shop by Category</h1>
     <!-- categories component -->
-    <div style="justify-content: space-between;">
-        <a style="scrollbuttonL"><</a>
-        <div class="categoryscroll marginleft">
-            <div class="category">
-                <a class="circle center">
-                    <img src="files/Categories/nintendo.png" alt="nintendo">
+    <div style="justify-content: space-between;" class="center">
+        <!-- left button -->
+        <a id="scrollbuttonL" onclick="scroll(-100)"><h1 style="font-size: 30px;"><</h1></a>
+        <!-- categories content -->
+        <div class="categoryscroll">
+            <div class="category" id="category">
+                <a class="circlecontainer">
+                    <div class="circle center">
+                        <img src="files/Categories/nintendo.png" alt="nintendo">
+                    </div>
+                    <p>Nintendo</p>
                 </a>
-                <a class="circle center">
-                    <img src="files/Categories/ps.png" alt="playstation">
+                <a class="circlecontainer">
+                    <div class="circle center">
+                        <img src="files/Categories/ps.png" alt="playstation">
+                    </div>
+                    <p>Playstation</p>
                 </a>
-                <a class="circle center">
-                    <img src="files/Categories/xbox.png" alt="xbox">
+                <a class="circlecontainer">
+                    <div class="circle center">
+                        <img src="files/Categories/xbox.png" alt="xbox">
+                    </div>
+                    <p>Xbox</p>
                 </a>
-                <a class="circle center">
-                    <img src="files/Categories/console.png" alt="console">
+
+                <a class="circlecontainer">
+                    <div class="circle center">
+                        <img src="files/Categories/console.png" alt="console">
+                    </div>
+                    <p>Console</p>
                 </a>
-                <a class="circle center">
-                    <img src="files/Categories/pokemon.png" alt="pokemon">
+                <a class="circlecontainer">
+                    <div class="circle center">
+                        <img src="files/Categories/pokemon.png" alt="pokemon">
+                    </div>
+                    <p>Pokemon</p>
                 </a>
-                <a class="circle center">
-                    <img src="files/Categories/mario.png" alt="mario">
+                <a class="circlecontainer">
+                    <div class="circle center">
+                        <img src="files/Categories/mario.png" alt="mario">
+                    </div>
+                    <p>Mario</p>
                 </a>
-                <a class="circle center">
-                    <img src="files/Categories/zelda.png" alt="zelda">
+                <a class="circlecontainer">
+                    <div class="circle center">
+                        <img src="files/Categories/zelda.png" alt="zelda">
+                    </div>
+                    <p>Zelda</p>
                 </a>
             </div>
         </div>  
-        <a class="scrollbuttonR">></a>  
+        <!-- right button -->
+        <a id="scrollbuttonR" onclick="scroll(100)"><h1 style="font-size: 30px;">></h1></a>  
     </div>
     
 
@@ -142,5 +167,6 @@
     </footer>
     <script src="javascript/menu.js"></script>
     <script src="javascript/imagecycle.js"></script>
+    <script src="javascript/scrollbutton.js"></script>
 </body>
 </html>
