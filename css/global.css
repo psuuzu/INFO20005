@@ -33,13 +33,15 @@ body{
 /*  __________________ */
 /* ~|Category Circle CSS|~ */
 /*  -------------------- */
-/* I put it here since somehow the style is inconsistent if putting it in home-categor.css  */
+/* I put the category css here since somehow the style is inconsistent if putting it in home-category.css  */
 
 /* contains circle and title */
 .circlecontainer{
     display: flex;
     flex-direction: column;
+    text-decoration: none;
 }
+
 
 
 /* categories circle */
