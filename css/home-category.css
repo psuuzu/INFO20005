@@ -1,0 +1,36 @@
+@import url(global.css);
+
+/* horizontal scroll of categories */
+.categoryscroll{
+    max-width: 90vw;
+    width: 90vw;
+    height: auto;
+    overflow-x: auto;
+    display: flex;
+    scrollbar-width: none;
+}
+
+
+/* displays categories in a row */
+.category{
+    display: flex;
+    flex-direction: row;
+}
+
+/* scroll buttons */
+#scrollbuttonL{
+
+    width:5vw;
+    min-width: 8vw;
+    
+}
+
+#scrollbuttonR{
+   
+    width:5vw;
+    min-width: 8vw;
+}
+
+
+
+

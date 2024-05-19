@@ -1,0 +1,135 @@
+@import url(global.css);
+
+/* horizontal scroll of product */
+.productscroll{
+    max-width: 90vw;
+    width: 90vw;
+    height: auto;
+    overflow-x: auto;
+    display: flex;
+    scrollbar-width: none;
+}
+
+/* displays products in a row */
+.product{
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    align-items: center;
+}
+
+/* scroll buttons */
+#scrollbuttonL{
+
+    width:5vw;
+    min-width: 8vw;
+    
+}
+
+#scrollbuttonR{
+   
+    width:5vw;
+    min-width: 8vw;
+}
+
+/* product card */
+.card{
+    margin: 1.5vw;
+    max-width: 150px;
+    width: 150px;
+    max-height: 280px;
+    height: 280px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-decoration: none;
+}
+
+/* product image */
+.productimage{
+    max-height: 150px;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 3px;
+}
+
+.productimage img{
+    height:100%;
+    width:auto;
+}
+
+
+/* description text */
+.description{
+    margin-top: 10px; 
+    margin-bottom: 2px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+/* tag container */
+.tagcontainer{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
+/* tags */
+.newrelease{
+    margin-left: 10px;
+    font-size: 10px;
+    font-family: orbitron;
+    font-weight:500;
+    color: white;
+    background-color: var(--hovercolour);
+    width: 80px;
+    height: 18px;
+    border-radius: 5px;
+    align-items: center;
+}
+.popular{
+    margin-left: 10px;
+    font-size: 10px;
+    font-family: orbitron;
+    font-weight:500;
+    color: white;
+    background-color: var(--blue);
+    width: 80px;
+    height: 18px;
+    border-radius: 5px;
+    align-items: center;
+}
+.featured{
+    margin-left: 10px;
+    font-size: 10px;
+    font-family: orbitron;
+    font-weight:500;
+    color: white;
+    background-color: var(--green);
+    width: 80px;
+    height: 18px;
+    border-radius: 5px;
+    align-items: center;
+}
+/* add cart button */
+.addcart{
+    margin-top: 10px;
+    background-color: var(--darkgrey);
+    color: white;
+    font-family: sans-serif;
+    font-size: 12px;
+    width: 80px;
+    height:25px;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.addcart:hover{
+    background-color: var(--hovercolour);
+}

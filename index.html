@@ -11,10 +11,13 @@
     <link rel="stylesheet" media="(max-width: 800px)" href="css/home-promo-small.css">
     <link rel="stylesheet" media="(min-width: 801px)" href="css/home-promo-large.css">
     <!-- category component -->
-    <link rel="stylesheet" media="(max-width: 800px)" href="css/home-category-small.css">
-    <link rel="stylesheet" media="(min-width: 801px)" href="css/home-category-large.css">
-        <!-- import orbitron font style -->
+    <link rel="stylesheet" href="css/home-category.css">
+    <!-- products component -->
+    <link rel="stylesheet" media="(max-width: 500px)" href="css/home-products-small.css">
+    <link rel="stylesheet" media="(min-width: 501px)" href="css/home-products-large.css">
+     <!-- import orbitron font style -->
     <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+    
 </head>
 <body>
        <!-- centers the header -->
@@ -22,7 +25,7 @@
         <header>
             <!-- menu for mobile version -->
             <div id="menu">
-                <a class="menubutton" href="html/shop.html"><h2>Shop</h2></a>
+                <a class="menubutton" href="html/shop.html" onclick="shoptitle('Shop')"><h2>Shop</h2></a>
                 <a class="menubutton"><h2>Pre-order</h2></a>
                 <a class="menubutton"><h2>Trade in</h2></a>
                 <a class="menubutton"><h2>About us</h2></a>
@@ -47,7 +50,7 @@
         </header>
     </div>
     <nav class="center" id="desknav">
-        <a href="html/shop.html" class="navbaritem">Shop</a>
+        <a href="html/shop.html" class="navbaritem" onclick="shoptitle('Shop')">Shop</a>
         <a class="navbaritem">Pre-Order</a>
         <a class="navbaritem">Trade In</a>
         <a class="navbaritem">About Us</a>
@@ -79,48 +82,51 @@
     <!-- categories component -->
     <div style="justify-content: space-between;" class="center">
         <!-- left button -->
-        <a id="scrollbuttonL" onclick="scroll(-100)"><h1 style="font-size: 30px;"><</h1></a>
+        <a id="scrollbuttonL" onclick="scrollcat(-80)"><h1 style="font-size: 30px;"><</h1></a>
         <!-- categories content -->
-        <div class="categoryscroll">
-            <div class="category" id="category">
-                <a class="circlecontainer">
+        <div class="categoryscroll" id="categoryscroll">
+            <div class="category">
+                <!-- 1st category container -->
+                <a class="circlecontainer" onclick="shoptitle('Nintendo')" href="html/shop.html">
+                    <!-- circle with image inside -->
                     <div class="circle center">
                         <img src="files/Categories/nintendo.png" alt="nintendo">
                     </div>
+                    <!-- title -->
                     <p>Nintendo</p>
                 </a>
-                <a class="circlecontainer">
+                <!-- next category container -->
+                <a class="circlecontainer" onclick="shoptitle('Playstation')" href="html/shop.html">
                     <div class="circle center">
                         <img src="files/Categories/ps.png" alt="playstation">
                     </div>
                     <p>Playstation</p>
                 </a>
-                <a class="circlecontainer">
+                <a class="circlecontainer" onclick="shoptitle('Xbox')" href="html/shop.html">
                     <div class="circle center">
                         <img src="files/Categories/xbox.png" alt="xbox">
                     </div>
                     <p>Xbox</p>
                 </a>
-
-                <a class="circlecontainer">
+                <a class="circlecontainer" onclick="shoptitle('Console')" href="html/shop.html">
                     <div class="circle center">
                         <img src="files/Categories/console.png" alt="console">
                     </div>
                     <p>Console</p>
                 </a>
-                <a class="circlecontainer">
+                <a class="circlecontainer" onclick="shoptitle('Pokemon')" href="html/shop.html">
                     <div class="circle center">
                         <img src="files/Categories/pokemon.png" alt="pokemon">
                     </div>
                     <p>Pokemon</p>
                 </a>
-                <a class="circlecontainer">
+                <a class="circlecontainer" onclick="shoptitle('Mario')" href="html/shop.html">
                     <div class="circle center">
                         <img src="files/Categories/mario.png" alt="mario">
                     </div>
                     <p>Mario</p>
                 </a>
-                <a class="circlecontainer">
+                <a class="circlecontainer" onclick="shoptitle('Zelda')" href="html/shop.html">
                     <div class="circle center">
                         <img src="files/Categories/zelda.png" alt="zelda">
                     </div>
@@ -129,12 +135,329 @@
             </div>
         </div>  
         <!-- right button -->
-        <a id="scrollbuttonR" onclick="scroll(100)"><h1 style="font-size: 30px;">></h1></a>  
+        <a id="scrollbuttonR" onclick="scrollproduct(80)"><h1 style="font-size: 30px;">></h1></a>  
+    </div>
+
+    <!-- new releases section -->
+    <h1 class="marginleft">New Releases</h1>
+    <div style="justify-content: space-between; position: relative;" class="center">
+        <!-- left button -->
+        <a id="scrollbuttonL" onclick="scrollproduct(-100)"><h1 style="font-size: 30px;"><</h1></a>
+        <!-- products content -->
+        <div class="productscroll" id="productscroll">
+          
+            <div class="product">
+                <!-- first product container -->
+                <a class="card" href="html/product1.html">
+                    <!-- image -->
+                    <div class="productimage">
+                        <img src="files/home-products/1.png" alt="South park snow day">
+                    </div>
+                    <!-- description -->
+                    <p class="description">South Park Snow Day</p>
+                    <!-- tag -->
+                    <div class="tagcontainer">
+                        <div class="newrelease center">
+                            New Release
+                        </div>
+                    </div>
+                    <h2 class="description">$59.95</h2>
+                    <div class="addcart center">
+                        Add to Cart
+                    </div>
+                </a>
+                <a class="card" href="html/product2.html">
+                    <!-- image -->
+                    <div class="productimage">
+                        <img src="files/home-products/image 21.png" alt="elden ring">
+                    </div>
+                    <!-- description -->
+                    <p class="description">Elden Ring</p>
+                    <!-- tag -->
+                    <div class="tagcontainer">
+                        <div class="newrelease center">
+                            New Release
+                        </div>
+                    </div>
+                    <h2 class="description">$59.95</h2>
+                    <div class="addcart center">
+                        Add to Cart
+                    </div>
+                </a>
+                <a class="card">
+                    <!-- image -->
+                    <div class="productimage">
+                        <img src="files/home-products/image 57.png" alt="Mario cart 8 deluxe">
+                    </div>
+                    <!-- description -->
+                    <p class="description">Mario Cart 8 Deluxe</p>
+                    <!-- tag -->
+                    <div class="tagcontainer">
+                        <div class="newrelease center">
+                            New Release
+                        </div>
+                    </div>
+                    <h2 class="description">$69</h2>
+                    <div class="addcart center">
+                        Add to Cart
+                    </div>
+                </a>
+                <a class="card">
+                    <!-- image -->
+                    <div class="productimage">
+                        <img src="files/home-products/image 23.png" alt="minecraft">
+                    </div>
+                    <!-- description -->
+                    <p class="description">Minecraft for Nintendo...</p>
+                    <!-- tag -->
+                    <div class="tagcontainer">
+                        <div class="newrelease center">
+                            New Release
+                        </div>
+                    </div>
+                    <h2 class="description">$39</h2>
+                    <div class="addcart center">
+                        Add to Cart
+                    </div>
+                </a>
+                <a class="card">
+                    <!-- image -->
+                    <div class="productimage">
+                        <img src="files/home-products/image 5.png" alt="Hogwarts Legacy">
+                    </div>
+                    <!-- description -->
+                    <p class="description">Hogwarts Legacy</p>
+                    <!-- tag -->
+                    <div class="tagcontainer">
+                        <div class="newrelease center">
+                            New Release
+                        </div>
+                    </div>
+                    <h2 class="description">$59</h2>
+                    <div class="addcart center">
+                        Add to Cart
+                    </div>
+                </a>
+
+            </div>
+        </div>  
+            <!-- right button -->
+        <a id="scrollbuttonR" onclick="scrollproduct(100)"><h1 style="font-size: 30px;">></h1></a>  
     </div>
     
+    <!-- popular section -->
+    <h1 class="marginleft">Popular</h1>
+    <div style="justify-content: space-between; position: relative;" class="center">
+        <!-- left button -->
+        <a id="scrollbuttonL" onclick="scrollproduct(-100)"><h1 style="font-size: 30px;"><</h1></a>
+        <!-- products content -->
+        <div class="productscroll" id="productscroll">
+          
+            <div class="product">
+                <!-- first product container -->
+                <a class="card">
+                    <!-- image -->
+                    <div class="productimage">
+                        <img src="files/home-products/81n2llGXyiL 1.png" alt="call of duty Modern warfare">
+                    </div>
+                    <!-- description -->
+                    <p class="description">Call of Duty Modern...</p>
+                    <!-- tag -->
+                    <div class="tagcontainer">
+                        <div class="popular center">
+                            Popular
+                        </div>
+                    </div>
+                    <h2 class="description">$89.95</h2>
+                    <div class="addcart center">
+                        Add to Cart
+                    </div>
+                </a>
+                <a class="card">
+                    <!-- image -->
+                    <div class="productimage">
+                        <img src="files/home-products/image 40.png" alt="Pokemon Scarlet">
+                    </div>
+                    <!-- description -->
+                    <p class="description">Pokemon Scarlet</p>
+                    <!-- tag -->
+                    <div class="tagcontainer">
+                        <div class="popular center">
+                            Popular
+                        </div>
+                    </div>
+                    <h2 class="description">$59.95</h2>
+                    <div class="addcart center">
+                        Add to Cart
+                    </div>
+                </a>
+                <a class="card">
+                    <!-- image -->
+                    <div class="productimage">
+                        <img src="files/home-products/image 30.png" alt="Sponge Bob Square Pa...">
+                    </div>
+                    <!-- description -->
+                    <p class="description">Sponge Bob Square Pa...</p>
+                    <!-- tag -->
+                    <div class="tagcontainer">
+                        <div class="popular center">
+                            popular
+                        </div>
+                    </div>
+                    <h2 class="description">$59</h2>
+                    <div class="addcart center">
+                        Add to Cart
+                    </div>
+                </a>
+                <a class="card">
+                    <!-- image -->
+                    <div class="productimage">
+                        <img src="files/home-products/image 31.png" alt="Dying Light 2">
+                    </div>
+                    <!-- description -->
+                    <p class="description">Dying Light 2</p>
+                    <!-- tag -->
+                    <div class="tagcontainer">
+                        <div class="popular center">
+                            popular
+                        </div>
+                    </div>
+                    <h2 class="description">$19</h2>
+                    <div class="addcart center">
+                        Add to Cart
+                    </div>
+                </a>
+                <a class="card">
+                    <!-- image -->
+                    <div class="productimage">
+                        <img src="files/home-products/image 11.png" alt="The Eternal cylinder">
+                    </div>
+                    <!-- description -->
+                    <p class="description">The Eternal cylinder</p>
+                    <!-- tag -->
+                    <div class="tagcontainer">
+                        <div class="popular center">
+                            popular
+                        </div>
+                    </div>
+                    <h2 class="description">$10</h2>
+                    <div class="addcart center">
+                        Add to Cart
+                    </div>
+                </a>
 
-    <h2 id="marginleft">Shop by Category</h2>
-    <p>adjfasdf</p>
+            </div>
+        </div>  
+            <!-- right button -->
+        <a id="scrollbuttonR" onclick="scrollproduct(100)"><h1 style="font-size: 30px;">></h1></a>  
+    </div>
+
+    <h1 class="marginleft">Featured</h1>
+    <div style="justify-content: space-between; position: relative;" class="center">
+        <!-- left button -->
+        <a id="scrollbuttonL" onclick="scrollproduct(-100)"><h1 style="font-size: 30px;"><</h1></a>
+        <!-- products content -->
+        <div class="productscroll" id="productscroll">
+          
+            <div class="product">
+                <!-- first product container -->
+                <a class="card">
+                    <!-- image -->
+                    <div class="productimage">
+                        <img src="files/home-products/image 6.png" alt="The Walking Dead">
+                    </div>
+                    <!-- description -->
+                    <p class="description">The Walking Dead</p>
+                    <!-- tag -->
+                    <div class="tagcontainer">
+                        <div class="featured center">
+                            featured
+                        </div>
+                    </div>
+                    <h2 class="description">$149.99</h2>
+                    <div class="addcart center">
+                        Add to Cart
+                    </div>
+                </a>
+                <a class="card">
+                    <!-- image -->
+                    <div class="productimage">
+                        <img src="files/home-products/image 7.png" alt="Pokemon Black">
+                    </div>
+                    <!-- description -->
+                    <p class="description">Pokemon black</p>
+                    <!-- tag -->
+                    <div class="tagcontainer">
+                        <div class="featured center">
+                            featured
+                        </div>
+                    </div>
+                    <h2 class="description">$89.95</h2>
+                    <div class="addcart center">
+                        Add to Cart
+                    </div>
+                </a>
+                <a class="card">
+                    <!-- image -->
+                    <div class="productimage">
+                        <img src="files/home-products/image 38.png" alt="Cricket 24">
+                    </div>
+                    <!-- description -->
+                    <p class="description">Cricket 24</p>
+                    <!-- tag -->
+                    <div class="tagcontainer">
+                        <div class="featured center">
+                            featured
+                        </div>
+                    </div>
+                    <h2 class="description">$79.95</h2>
+                    <div class="addcart center">
+                        Add to Cart
+                    </div>
+                </a>
+                <a class="card">
+                    <!-- image -->
+                    <div class="productimage">
+                        <img src="files/home-products/image 39.png" alt="Animal Crossing: New...">
+                    </div>
+                    <!-- description -->
+                    <p class="description">Animal Crossing: New...</p>
+                    <!-- tag -->
+                    <div class="tagcontainer">
+                        <div class="featured center">
+                            featured
+                        </div>
+                    </div>
+                    <h2 class="description">$69</h2>
+                    <div class="addcart center">
+                        Add to Cart
+                    </div>
+                </a>
+                <a class="card">
+                    <!-- image -->
+                    <div class="productimage">
+                        <img src="files/home-products/image 16.png" alt="Bluey: the Videoga">
+                    </div>
+                    <!-- description -->
+                    <p class="description">Bluey: the Videoga</p>
+                    <!-- tag -->
+                    <div class="tagcontainer">
+                        <div class="featured center">
+                            featured
+                        </div>
+                    </div>
+                    <h2 class="description">$64</h2>
+                    <div class="addcart center">
+                        Add to Cart
+                    </div>
+                </a>
+
+            </div>
+        </div>  
+            <!-- right button -->
+        <a id="scrollbuttonR" onclick="scrollproduct(100)"><h1 style="font-size: 30px;">></h1></a>  
+    </div>
+
 
     
 
@@ -168,5 +491,6 @@
     <script src="javascript/menu.js"></script>
     <script src="javascript/imagecycle.js"></script>
     <script src="javascript/scrollbutton.js"></script>
+    <script src="javascript/shoptitle.js"></script>
 </body>
 </html>
