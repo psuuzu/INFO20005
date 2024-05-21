@@ -1,36 +1,39 @@
 //Script for changing button colours and filtering
 // define the buttons
+
+//key: state 0 = not selected, state 1 = selected
 let state=[
     {
-        button: 'nintendo',
+        buttonid: 'nintendo',
         state: 0,
     },{
-        button: 'xbox',
+        buttonid: 'xbox',
         state: 0,
     },{
-        button: 'ps',
+        buttonid: 'ps',
         state: 0,
     },{
-        button: 'pokemon',
+        buttonid: 'pokemon',
         state:0,
     },{
-        button: 'mario',
+        buttonid: 'mario',
         state:0,
     },{
-        button: 'tagp',
+        buttonid: 'tagp',
         state:0,
         class:'pop',
     },{
-        button: 'tagf',
+        buttonid:'tagf',
         state:0,
         class:'ft',
     },{
-        button: 'tagn',
+        buttonid: 'tagn',
         state:0,
         class:'nr',
     },
 ]
 
+//change button style and change state
 function categorychange(id,index,original,clicked){
     if(state[index].state==0){
         let category = document.getElementById(id)
@@ -48,6 +51,9 @@ function clearfilter(){
     let allproducts = document.getElementsByClassName('card');
     for (let i = 0; i < allproducts.length; i++) {
         allproducts[i].classList.remove('hide');
+    }
+    for(let i=0; i< state.length; i++){
+
     }
 }
 
