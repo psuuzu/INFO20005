@@ -6,6 +6,11 @@
     <title>Maxx Gaming</title>
     <link rel="stylesheet" media="(max-width: 800px)" href="../css/smallpage.css">
     <link rel="stylesheet" media="(min-width: 801px)" href="../css/largepage.css">
+    <!-- products component -->
+    <link rel="stylesheet" media="(max-width: 500px)" href="../css/products-small.css">
+    <link rel="stylesheet" media="(min-width: 501px)" href="../css/products-large.css">
+    <!-- 2column layout (for desktop) and single for mobile -->
+    <link rel="stylesheet"  href="../css/shop-large.css">
         <!-- import orbitron font style -->
     <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
 
@@ -49,7 +54,299 @@
     <!-- ______________________________ -->
     <!-- CONTENT OF EACH PAGE GOES HERE -->
     <!-- ------------------------------ -->
-    <h1 class="marginleft" id="title" >Shop</h1>
+  
+    <div style="display: flex;">
+        <!-- column1 contains filter (for desktop version) -->
+        <div class="column1">
+            <h2>Filter By</h2>
+            <p>Price Range:</p>
+            <div class="center">
+                <input type="number" name="minimumprice" class="priceinput">
+                <p style="margin: 10px;">to</p>
+                <input type="number" name="maximumprice" class="priceinput">
+            </div>
+            <p>Tags</p>
+            <div class="center" style="flex-direction: column;">
+                <a class="tagp center" id="tagp" onclick="categorychange('tagp',5,'tagp','tagpclick')">
+                    Popular
+                </a>
+                <a class="tagf center" id="tagf" onclick="categorychange('tagf',6,'tagf','tagfclick')">
+                    Featured
+                </a>
+                <a class="tagn center" id="tagn" onclick="categorychange('tagn',7,'tagn','tagnclick')">
+                    new release
+                </a>
+            </div>
+            <p>Categories</p>
+            <div class="center" style="flex-direction: column;">
+                <!-- when clicked, runs function that changes its style -->
+                <a class="categories center" id="nintendo" onclick="categorychange('nintendo',0,'categories','categoriesclick')">
+                    Nintendo
+                </a>
+                <a class="categories center" id="xbox" onclick="categorychange('xbox',1,'categories','categoriesclick')">
+                    Xbox
+                </a>
+                <a class="categories center" id="ps" onclick="categorychange('ps',2,'categories','categoriesclick')">
+                    Playstation
+                </a>
+                <a class="categories center" id="pokemon" onclick="categorychange('pokemon',3,'categories','categoriesclick')">
+                    Pokemon
+                </a>
+                <a class="categories center" id="mario" onclick="categorychange('mario',4,'categories','categoriesclick')">
+                    mario
+                </a>
+            </div>
+            <div class="center">
+                <a class="apply" onclick="apply()">Apply</a>
+            </div>
+            <div class="center">
+                <a class="apply" onclick="clearfilter()">Clear Filter</a>
+            </div>
+        </div>
+        <div class="column2">
+            <!-- column 2 contains products -->
+            <div class="title-sort">
+                <h1 id="title" >Shop</h1>
+                <div>
+                    <h2>Sort</h2>
+                </div>
+            </div>
+            <!-- products section -->
+            <div class="productscontainer">
+                 <!-- nr class only acts as an identifier for filtering -->
+                <a class="card nr" href="../html/product1.html">
+                    <!-- image -->
+                    <div class="productimage">
+                        <img src="../files/home-products/1.png" alt="South park snow day">
+                    </div>
+                    <!-- description -->
+                    <p class="description">South Park Snow Day</p>
+                    <!-- tag -->
+                    <div class="tagcontainer">
+                        <div class="newrelease center">
+                            New Release
+                        </div>
+                    </div>
+                    <h2 class="description">$59.95</h2>
+                    <div class="addcart center">
+                        Add to Cart
+                    </div>
+                </a>
+                 <!-- nr class only acts as an identifier for filtering -->
+                <a class="card nr" href="../html/product2.html">
+                    <!-- image -->
+                    <div class="productimage">
+                        <img src="../files/home-products/image 21.png" alt="elden ring">
+                    </div>
+                    <!-- description -->
+                    <p class="description">Elden Ring</p>
+                    <!-- tag -->
+                    <div class="tagcontainer">
+                        <div class="newrelease center">
+                            New Release
+                        </div>
+                    </div>
+                    <h2 class="description">$59.95</h2>
+                    <div class="addcart center">
+                        Add to Cart
+                    </div>
+                </a>
+                 <!-- pop class only acts as an identifier for filtering -->
+                <a class="card pop">
+                    <!-- image -->
+                    <div class="productimage">
+                        <img src="../files/shop-products/image 9.png" alt="Grand theft auto V">
+                    </div>
+                    <!-- description -->
+                    <p class="description">Grand Theft Auto V</p>
+                    <!-- tag -->
+                    <div class="tagcontainer">
+                        <div class="popular center">
+                            Popular
+                        </div>
+                    </div>
+                    <h2 class="description">$29</h2>
+                    <div class="addcart center">
+                        Add to Cart
+                    </div>
+                </a>
+                <!-- ft class only acts as an identifier for filtering -->
+                <a class="card ft">
+                    <!-- image -->
+                    <div class="productimage">
+                        <img src="../files/shop-products/image 91.png" alt="call of duty black ops">
+                    </div>
+                    <!-- description -->
+                    <p class="description">Call of Duty: black...</p>
+                    <!-- tag -->
+                    <div class="tagcontainer">
+                        <div class="featured center">
+                            Featured
+                        </div>
+                    </div>
+                    <h2 class="description">$60</h2>
+                    <div class="addcart center">
+                        Add to Cart
+                    </div>
+                </a>
+                <a class="card">
+                    <!-- image -->
+                    <div class="productimage">
+                        <img src="../files/shop-products/image 81.png" alt="Princess Peach">
+                    </div>
+                    <!-- description -->
+                    <p class="description">Princess Peach sh...</p>
+                    <!-- tag -->
+                    <div class="tagcontainer">
+                        <div class="notag center">
+                         
+                        </div>
+                    </div>
+                    <h2 class="description">$69</h2>
+                    <div class="addcart center">
+                        Add to Cart
+                    </div>
+                </a>
+                <a class="card">
+                    <!-- image -->
+                    <div class="productimage">
+                        <img src="../files/shop-products/image 71.png" alt="Super Mario Bros Wonder">
+                    </div>
+                    <!-- description -->
+                    <p class="description">Super Mario Bros W...</p>
+                    <!-- tag -->
+                    <div class="tagcontainer">
+                        <div class="notag center">
+                         
+                        </div>
+                    </div>
+                    <h2 class="description">$69</h2>
+                    <div class="addcart center">
+                        Add to Cart
+                    </div>
+                </a>
+                <a class="card">
+                    <!-- image -->
+                    <div class="productimage">
+                        <img src="../files/shop-products/image 46.png" alt="Pokemon Legends Arceus">
+                    </div>
+                    <!-- description -->
+                    <p class="description">Pokemon Legends A...</p>
+                    <!-- tag -->
+                    <div class="tagcontainer">
+                        <div class="notag center">
+                         
+                        </div>
+                    </div>
+                    <h2 class="description">$69</h2>
+                    <div class="addcart center">
+                        Add to Cart
+                    </div>
+                </a>
+                <a class="card">
+                    <!-- image -->
+                    <div class="productimage">
+                        <img src="../files/shop-products/image 47.png" alt="Dragons Dogma 2">
+                    </div>
+                    <!-- description -->
+                    <p class="description">Dragons Dogma 2</p>
+                    <!-- tag -->
+                    <div class="tagcontainer">
+                        <div class="notag center">
+                         
+                        </div>
+                    </div>
+                    <h2 class="description">$29</h2>
+                    <div class="addcart center">
+                        Add to Cart
+                    </div>
+                </a>
+                <a class="card">
+                    <!-- image -->
+                    <div class="productimage">
+                        <img src="../files/shop-products/image 52.png" alt="The Callisto Protocol">
+                    </div>
+                    <!-- description -->
+                    <p class="description">The Callisto Protocol</p>
+                    <!-- tag -->
+                    <div class="tagcontainer">
+                        <div class="notag center">
+                         
+                        </div>
+                    </div>
+                    <h2 class="description">$100</h2>
+                    <div class="addcart center">
+                        Add to Cart
+                    </div>
+                </a>
+                <a class="card">
+                    <!-- image -->
+                    <div class="productimage">
+                        <img src="../files/shop-products/image 53.png" alt="Rise Of the Ronin">
+                    </div>
+                    <!-- description -->
+                    <p class="description">Rise Of the Ronin</p>
+                    <!-- tag -->
+                    <div class="tagcontainer">
+                        <div class="notag center">
+                         
+                        </div>
+                    </div>
+                    <h2 class="description">$109</h2>
+                    <div class="addcart center">
+                        Add to Cart
+                    </div>
+                </a>
+                <a class="card">
+                    <!-- image -->
+                    <div class="productimage">
+                        <img src="../files/shop-products/image 54.png" alt="Luigi’s Mansion 2">
+                    </div>
+                    <!-- description -->
+                    <p class="description">Luigi’s Mansion 2</p>
+                    <!-- tag -->
+                    <div class="tagcontainer">
+                        <div class="notag center">
+                         
+                        </div>
+                    </div>
+                    <h2 class="description">$69</h2>
+                    <div class="addcart center">
+                        Add to Cart
+                    </div>
+                </a>
+                <a class="card">
+                    <!-- image -->
+                    <div class="productimage">
+                        <img src="../files/shop-products/image 55.png" alt="Spider-Man 2">
+                    </div>
+                    <!-- description -->
+                    <p class="description">Spider-Man 2</p>
+                    <!-- tag -->
+                    <div class="tagcontainer">
+                        <div class="notag center">
+                         
+                        </div>
+                    </div>
+                    <h2 class="description">$109</h2>
+                    <div class="addcart center">
+                        Add to Cart
+                    </div>
+                </a>
+            </div>
+            <div class="center"><p>Showing 12/999 results</p></div>
+            <div class="center" style="margin-bottom: 50px;">
+                <a class="showmore center">
+                    Show More
+                </a>
+                <a href="#desknav" class="backtotop center">
+                    Back to top
+                </a>
+            </div>
+
+        </div>
+    </div>
+
 
     <footer class="center" id="footer">
         <div style="margin-bottom: 10px;" id="footercontent">
@@ -80,6 +377,8 @@
     <script src="../javascript/menu.js"></script>
     <script src="../javascript/scrollbutton.js"></script>
     <script src="../javascript/shoptitle.js"></script>
+    <script src="../javascript/filter.js"></script>
+
 
 </body>
 </html>

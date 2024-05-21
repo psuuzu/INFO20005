@@ -5,8 +5,8 @@ function scrollcat(dist){
     category.scrollBy({left: dist, behavior: "smooth"})
 }
 
-function scrollproduct(dist){
-    let category = document.getElementById("productscroll");
+function scrollproduct(dist, id){
+    let category = document.getElementById(id);
     // scroll by variable dist and make it smooth
     category.scrollBy({left: dist, behavior: "smooth"})
 }

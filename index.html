@@ -13,8 +13,8 @@
     <!-- category component -->
     <link rel="stylesheet" href="css/home-category.css">
     <!-- products component -->
-    <link rel="stylesheet" media="(max-width: 500px)" href="css/home-products-small.css">
-    <link rel="stylesheet" media="(min-width: 501px)" href="css/home-products-large.css">
+    <link rel="stylesheet" media="(max-width: 500px)" href="css/products-small.css">
+    <link rel="stylesheet" media="(min-width: 501px)" href="css/products-large.css">
      <!-- import orbitron font style -->
     <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
     
@@ -135,14 +135,14 @@
             </div>
         </div>  
         <!-- right button -->
-        <a id="scrollbuttonR" onclick="scrollproduct(80)"><h1 style="font-size: 30px;">></h1></a>  
+        <a id="scrollbuttonR" onclick="scrollcat(80)"><h1 style="font-size: 30px;">></h1></a>  
     </div>
 
     <!-- new releases section -->
     <h1 class="marginleft">New Releases</h1>
     <div style="justify-content: space-between; position: relative;" class="center">
         <!-- left button -->
-        <a id="scrollbuttonL" onclick="scrollproduct(-100)"><h1 style="font-size: 30px;"><</h1></a>
+        <a id="scrollbuttonL" onclick="scrollproduct(-100, 'productscroll')"><h1 style="font-size: 30px;"><</h1></a>
         <!-- products content -->
         <div class="productscroll" id="productscroll">
           
@@ -242,16 +242,16 @@
             </div>
         </div>  
             <!-- right button -->
-        <a id="scrollbuttonR" onclick="scrollproduct(100)"><h1 style="font-size: 30px;">></h1></a>  
+        <a id="scrollbuttonR" onclick="scrollproduct(100, 'productscroll')"><h1 style="font-size: 30px;">></h1></a>  
     </div>
     
     <!-- popular section -->
     <h1 class="marginleft">Popular</h1>
     <div style="justify-content: space-between; position: relative;" class="center">
         <!-- left button -->
-        <a id="scrollbuttonL" onclick="scrollproduct(-100)"><h1 style="font-size: 30px;"><</h1></a>
+        <a id="scrollbuttonL" onclick="scrollproduct(-100, 'productscroll1')"><h1 style="font-size: 30px;"><</h1></a>
         <!-- products content -->
-        <div class="productscroll" id="productscroll">
+        <div class="productscroll" id="productscroll1">
           
             <div class="product">
                 <!-- first product container -->
@@ -349,15 +349,15 @@
             </div>
         </div>  
             <!-- right button -->
-        <a id="scrollbuttonR" onclick="scrollproduct(100)"><h1 style="font-size: 30px;">></h1></a>  
+        <a id="scrollbuttonR" onclick="scrollproduct(100, 'productscroll1')"><h1 style="font-size: 30px;">></h1></a>  
     </div>
-
+<!-- featured section -->
     <h1 class="marginleft">Featured</h1>
     <div style="justify-content: space-between; position: relative;" class="center">
         <!-- left button -->
-        <a id="scrollbuttonL" onclick="scrollproduct(-100)"><h1 style="font-size: 30px;"><</h1></a>
+        <a id="scrollbuttonL" onclick="scrollproduct(-100, 'productscroll2')"><h1 style="font-size: 30px;"><</h1></a>
         <!-- products content -->
-        <div class="productscroll" id="productscroll">
+        <div class="productscroll" id="productscroll2">
           
             <div class="product">
                 <!-- first product container -->
@@ -455,7 +455,7 @@
             </div>
         </div>  
             <!-- right button -->
-        <a id="scrollbuttonR" onclick="scrollproduct(100)"><h1 style="font-size: 30px;">></h1></a>  
+        <a id="scrollbuttonR" onclick="scrollproduct(100, 'productscroll2')"><h1 style="font-size: 30px;">></h1></a>  
     </div>
 
 
