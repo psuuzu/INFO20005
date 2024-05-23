@@ -67,32 +67,32 @@
             </div>
             <p>Tags</p>
             <div class="center" style="flex-direction: column;">
-                <a class="tagp center" id="tagp" onclick="categorychange('tagp',5,'tagp','tagpclick')">
+                <a class="tagp center" id="tagp" onclick="categorychange('tagp',5)">
                     Popular
                 </a>
-                <a class="tagf center" id="tagf" onclick="categorychange('tagf',6,'tagf','tagfclick')">
+                <a class="tagf center" id="tagf" onclick="categorychange('tagf',6)">
                     Featured
                 </a>
-                <a class="tagn center" id="tagn" onclick="categorychange('tagn',7,'tagn','tagnclick')">
+                <a class="tagn center" id="tagn" onclick="categorychange('tagn',7)">
                     new release
                 </a>
             </div>
             <p>Categories</p>
             <div class="center" style="flex-direction: column;">
                 <!-- when clicked, runs function that changes its style -->
-                <a class="categories center" id="nintendo" onclick="categorychange('nintendo',0,'categories','categoriesclick')">
+                <a class="categories center" id="nintendo" onclick="categorychange('nintendo',0)">
                     Nintendo
                 </a>
-                <a class="categories center" id="xbox" onclick="categorychange('xbox',1,'categories','categoriesclick')">
+                <a class="categories center" id="xbox" onclick="categorychange('xbox',1)">
                     Xbox
                 </a>
-                <a class="categories center" id="ps" onclick="categorychange('ps',2,'categories','categoriesclick')">
+                <a class="categories center" id="ps" onclick="categorychange('ps',2)">
                     Playstation
                 </a>
-                <a class="categories center" id="pokemon" onclick="categorychange('pokemon',3,'categories','categoriesclick')">
+                <a class="categories center" id="pokemon" onclick="categorychange('pokemon',3)">
                     Pokemon
                 </a>
-                <a class="categories center" id="mario" onclick="categorychange('mario',4,'categories','categoriesclick')">
+                <a class="categories center" id="mario" onclick="categorychange('mario',4)">
                     mario
                 </a>
             </div>
@@ -106,9 +106,19 @@
         <div class="column2">
             <!-- column 2 contains products -->
             <div class="title-sort">
+                <!-- title -->
                 <h1 id="title" >Shop</h1>
-                <div>
+                <div class="sortcontainer">
+                    <!-- sort section -->
                     <h2>Sort</h2>
+                    <div>
+                        <select id="select" class="sortbutton" name="select">
+                            <option value="date">latest</option>
+                            <option value="Price">Price</option>
+                            <option value="oldest">oldest</option>
+                            <option value="none">none</option>
+                        </select>
+                    </div>
                 </div>
             </div>
             <!-- products section -->

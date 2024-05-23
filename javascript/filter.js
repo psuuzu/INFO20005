@@ -6,30 +6,46 @@ let state=[
     {
         buttonid: 'nintendo',
         state: 0,
+        originalclass: 'categories',
+        clickedclass:'categoriesclick',
     },{
         buttonid: 'xbox',
         state: 0,
+        originalclass: 'categories',
+        clickedclass:'categoriesclick',
     },{
         buttonid: 'ps',
         state: 0,
+        originalclass: 'categories',
+        clickedclass:'categoriesclick',
     },{
         buttonid: 'pokemon',
         state:0,
+        originalclass: 'categories',
+        clickedclass:'categoriesclick',
     },{
         buttonid: 'mario',
         state:0,
+        originalclass: 'categories',
+        clickedclass:'categoriesclick',
     },{
         buttonid: 'tagp',
         state:0,
         class:'pop',
+        originalclass: 'tagp',
+        clickedclass:'tagpclick',
     },{
         buttonid:'tagf',
         state:0,
         class:'ft',
+        originalclass: 'tagf',
+        clickedclass:'tagfclick',
     },{
         buttonid: 'tagn',
         state:0,
         class:'nr',
+        originalclass: 'tagn',
+        clickedclass:'tagnclick',
     },
 ]
 
@@ -37,11 +53,11 @@ let state=[
 function categorychange(id,index,original,clicked){
     if(state[index].state==0){
         let category = document.getElementById(id)
-        category.className=clicked
+        category.className=state[index].clickedclass
         state[index].state=1
     }else{
         let category = document.getElementById(id)
-        category.className=original
+        category.className=state[index].originalclass
         state[index].state=0
     }
 }
@@ -53,7 +69,9 @@ function clearfilter(){
         allproducts[i].classList.remove('hide');
     }
     for(let i=0; i< state.length; i++){
-
+        state[i].state=0;
+        let buttons = document.getElementById(state[i].buttonid)
+        buttons.className=state[i].originalclass
     }
 }
 
