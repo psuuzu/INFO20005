@@ -159,6 +159,84 @@
     margin-right: 20px;
 }
 
+/*  ____________________ */
+/* ~|mobile CSS CONTENT|~ */
+/*  -------------------- */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+/* Dropdown button */
+.dropbtnfilter {
+    border: none;
+    width: 50vw;
+    height:46px;
+    display:flex;
+    align-items: center;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .dropbtnsort {
+    border: none;
+    width: 50vw;
+    height:46px;
+    display:flex;
+    justify-content: end;
+    align-items: center;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  
+  /* right button content container */
+  .dropdown-contentright {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  /* left button content container */
+  .dropdown-contentleft {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-contentright a {
+    min-width: 100vw;
+    color: black;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-contentleft a {
+    min-width: 100vw;
+    color: black;
+    text-decoration: none;
+    display: block;
+  }
+
+  /* display content when button clicked */
+  .dropdown:hover .dropdown-contentright{
+    display: block;
+  }
+
+  .dropdown:hover .dropdown-contentleft{
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+
 
 
 
