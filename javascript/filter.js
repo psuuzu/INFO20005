@@ -50,10 +50,11 @@ let state=[
 ]
 
 //change button style and change state
-function categorychange(id,index,original,clicked){
+function categorychange(id,index){
     if(state[index].state==0){
         let category = document.getElementById(id)
         category.className=state[index].clickedclass
+        state[index].buttonid=id
         state[index].state=1
     }else{
         let category = document.getElementById(id)

@@ -125,23 +125,45 @@
                     </div>
                 </div>
             </div>
+            <!-- mobile version of filter and sort -->
             <div class="dropdowncontainer">
+                <!-- filter button -->
                 <div class="dropdown">
                     <button class="dropbtnfilter">
                         <img src="../files/filtericon.png" alt="filtericon">
                         <h2 style="margin-left: 10vw;">Filter</h2>
                     </button>
+                    <!-- filter content -->
                     <div class="dropdown-contentleft">
-                        <a href="#">Linkahh</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
+                        <div class="filtercontainer">
+                            <p>Price Range:</p>
+                            <div class="center">
+                                <input type="number" name="minimumprice" class="priceinput">
+                                <p style="margin: 10px;">to</p>
+                                <input type="number" name="maximumprice" class="priceinput">
+                            </div>
+                            <p>Tags</p>
+                            <div class="center">
+                                <a class="tagp center" id="tagpm" onclick="categorychange('tagpm',5)">
+                                    Popular
+                                </a>
+                                <a class="tagf center" id="tagfm" onclick="categorychange('tagfm',6)">
+                                    Featured
+                                </a>
+                                <a class="tagn center" id="tagnm" onclick="categorychange('tagnm',7)">
+                                    new release
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <!-- sort button -->
                 <div class="dropdown" >
                     <button class="dropbtnsort">
                         <h2 style="margin-right: 10vw;">Sort</h2>
                         <img src="../files/sorticon.png" alt="filtericon">
                     </button>
+                    <!-- sort content -->
                     <div class="dropdown-contentright">
                         <a href="#">Link 1</a>
                         <a href="#">Link 2</a>
