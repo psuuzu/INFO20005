@@ -6,6 +6,7 @@
 
 #menu{
     position: fixed;
+    /* out of screen at first, then slide in when menu activated */
     top: -500px;
     /* height of the menu */
     width: 100vw;
