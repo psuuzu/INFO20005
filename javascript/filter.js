@@ -51,11 +51,13 @@ let state=[
 
 //change button style and change state
 function categorychange(id,index){
+    state[index].buttonid=id //save button id
+    // if button is not clicked, change state to clicked (state 1)
     if(state[index].state==0){
         let category = document.getElementById(id)
         category.className=state[index].clickedclass
-        state[index].buttonid=id
         state[index].state=1
+    // if button is clicked, change state to unclicked (state 0)
     }else{
         let category = document.getElementById(id)
         category.className=state[index].originalclass
@@ -65,15 +67,18 @@ function categorychange(id,index){
 
 //remove all hide classes when filter cleared
 function clearfilter(){
+    // remove filters
     let allproducts = document.getElementsByClassName('card');
     for (let i = 0; i < allproducts.length; i++) {
         allproducts[i].classList.remove('hide');
     }
+    // remove clicked buttons styling
     for(let i=0; i< state.length; i++){
         state[i].state=0;
         let buttons = document.getElementById(state[i].buttonid)
         buttons.className=state[i].originalclass
     }
+    document.querySelector('.dropdown-contentleft').style.display = 'none'; //hides filter dropdown
 }
 
 function apply() {
@@ -91,5 +96,21 @@ function apply() {
             }
         }
     }
+    document.querySelector('.dropdown-contentleft').style.display = 'none'; //hides the filter dropdown
 }
 
+//function for opening filter dropdown content
+function openfilter(){
+    document.querySelector('.dropdown-contentleft').style.display = 'block'; //open the filter dropdown
+    document.querySelector('.dropdown-contentright').style.display = 'none'; //close the sort dropdown
+}
+
+function opensort(){
+    document.querySelector('.dropdown-contentright').style.display = 'block'; //open the sort dropdown
+    document.querySelector('.dropdown-contentleft').style.display = 'none'; //close the filter dropdown
+}
+
+// function to close sort when an option is selected
+function closesort(){
+    document.querySelector('.dropdown-contentright').style.display = 'none'; //close the filter dropdown
+}

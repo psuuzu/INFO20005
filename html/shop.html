@@ -117,10 +117,10 @@
                     <h2>Sort</h2>
                     <div>
                         <select id="select" class="sortbutton" name="select">
-                            <option value="date">latest</option>
-                            <option value="Price">Price</option>
-                            <option value="oldest">oldest</option>
-                            <option value="none">none</option>
+                            <option value="date">relevance</option>
+                            <option value="Price">latest</option>
+                            <option value="oldest">price</option>
+                            <option value="none">popularity</option>
                         </select>
                     </div>
                 </div>
@@ -129,19 +129,21 @@
             <div class="dropdowncontainer">
                 <!-- filter button -->
                 <div class="dropdown">
-                    <button class="dropbtnfilter">
+                    <a class="dropbtnfilter" onclick="openfilter()">
                         <img src="../files/filtericon.png" alt="filtericon">
                         <h2 style="margin-left: 10vw;">Filter</h2>
-                    </button>
+                    </a>
                     <!-- filter content -->
                     <div class="dropdown-contentleft">
                         <div class="filtercontainer">
+                            <!-- price -->
                             <p>Price Range:</p>
                             <div class="center">
                                 <input type="number" name="minimumprice" class="priceinput">
                                 <p style="margin: 10px;">to</p>
                                 <input type="number" name="maximumprice" class="priceinput">
                             </div>
+                            <!-- tags -->
                             <p>Tags</p>
                             <div class="center">
                                 <a class="tagp center" id="tagpm" onclick="categorychange('tagpm',5)">
@@ -154,20 +156,44 @@
                                     new release
                                 </a>
                             </div>
+                            <!-- categories -->
+                            <p>Categories</p>
+                            <a class="categories center" id="nintendom" onclick="categorychange('nintendom',0)">
+                                Nintendo
+                            </a>
+                            <a class="categories center" id="xboxm" onclick="categorychange('xboxm',1)">
+                                Xbox
+                            </a>
+                            <a class="categories center" id="psm" onclick="categorychange('psm',2)">
+                                Playstation
+                            </a>
+                            <a class="categories center" id="pokemonm" onclick="categorychange('pokemonm',3)">
+                                Pokemon
+                            </a>
+                            <a class="categories center" id="mariom" onclick="categorychange('mariom',4)">
+                                mario
+                            </a>
+                            <div class="center">
+                                <a class="apply" onclick="apply()">Apply</a>
+                            </div>
+                            <div class="center">
+                                <a class="apply" onclick="clearfilter()">Clear Filter</a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <!-- sort button -->
-                <div class="dropdown" >
-                    <button class="dropbtnsort">
+                <div class="dropdown">
+                    <a class="dropbtnsort" onclick="opensort()">
                         <h2 style="margin-right: 10vw;">Sort</h2>
                         <img src="../files/sorticon.png" alt="filtericon">
-                    </button>
+                    </a>
                     <!-- sort content -->
                     <div class="dropdown-contentright">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
+                        <a onclick="closesort()">relevance</a>
+                        <a onclick="closesort()">latest</a>
+                        <a onclick="closesort()">price</a>
+                        <a onclick="closesort()">popularity</a>
                     </div>
                 </div>
             </div>
