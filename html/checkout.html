@@ -7,7 +7,8 @@
     <link rel="stylesheet" media="(max-width: 800px)" href="../css/smallpage.css">
     <link rel="stylesheet" media="(min-width: 801px)" href="../css/largepage.css">
     <!-- checkout structure -->
-    <link rel="stylesheet" href="../css/checkout-structure-large.css">
+    <link rel="stylesheet" media="(max-width: 800px)"href="../css/checkout-structure-small.css">
+    <link rel="stylesheet" media="(min-width: 801px)"href="../css/checkout-structure-large.css">
         <!-- import orbitron font style -->
     <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
 
@@ -61,24 +62,87 @@
     <div class="checkoutcontainer">
         <!-- column 1 -->
         <div class="column1">
+            <!-- contact details -->
             <div class="h2container"><h2>Contact Details</h2></div>
             <div class="center" style="flex-direction: column;">
                 <input type="text" name="checkoutinput" placeholder="First Name" class="checkoutinput">
                 <input type="text" name="checkoutinput" placeholder="Last Name" class="checkoutinput">
                 <input type="text" name="checkoutinput" placeholder="Email Address" class="checkoutinput">
                 <input type="number" name="checkoutinput" placeholder="Phone Number" class="checkoutinput">
+                <div class="h2container"><h2>Delivery Method</h2></div>
+                <div class="center">
+                    <a class="selectcontainer" onclick="select(1)">
+                        <p style="margin-right: 5px;">Delivery</p>
+                        <div class="outercircle">
+                            <div id="innercircle1">
+                            </div>
+                        </div>
+                    </a>
+                    <a class="selectcontainer2" onclick="select(2)">
+                        <p style="margin-right: 5px;">Click and Collect</p>
+                        <div class="outercircle">
+                            <div id="innercircle2">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <input type="text" name="checkoutinput" placeholder="Delivery Address" class="deliveryinput" id="address">
             </div>
-            <div class="h2container"><h2>Delivery Method</h2></div>
-            <div class="selectcontainer">
-                <p>Delivery</p>
-                <div class="outercircle">
-                    <div class="innercircle">
-
+            <p style="margin-left: 15px;">Price __</p>
+            
+            <!-- order summary -->
+            <div class="h2container"><h2>Order Summary</h2></div>
+            <!-- payment method -->
+            <div class="h2container"><h2>Payment Method</h2></div>
+            <div class="center" style="flex-direction: column;">
+                <div class="selectandicon">
+                    <a class="selectpaymentcontainer" onclick="selectpay(1)">
+                        <p style="margin-right: 5px;">Paypal</p>
+                        <div class="outercircle">
+                            <div id="innercircle3">
+                            </div>
+                        </div>
+                    </a>
+                    <img src="../files/paypal.png" alt="paypal" style="max-width: 40px; max-height: 40px;">
+                </div>
+                <div class="selectandicon">
+                    <a class="selectpaymentcontainer" onclick="selectpay(2)">
+                        <p style="margin-right: 5px;">Credit Card</p>
+                        <div class="outercircle">
+                            <div id="innercircle4">
+                            </div>
+                        </div>
+                    </a>
+                    <img src="../files/visamaster (1).png" alt="paypal" style="max-width: auto; max-height: 40px;">
+                </div>
+                <!-- payment details -->
+                <p class="cardtitle">Cardholder Name</p>
+                <input type="text" name="cardname" placeholder="First name, Last name" class="cardinput">
+                <p class="cardtitle">Card Number</p>
+                <input type="text" name="cardnumber" placeholder="1111-2222-3333-4444" class="cardinput">
+                <div style="display:flex;">
+                    <div>
+                        <p class="cardtitle2">Expiry Date</p>
+                        <input type="month" name="date" placeholder="mm/yyyy" class="dateinput">
+                    </div>
+                    <div>
+                        <p class="cardtitle2">CVV</p>
+                        <input type="number" name="cvvnumber" placeholder="000" class="cvvinput">
                     </div>
                 </div>
+                <div style="display:flex; align-items: center;">
+                    <a class="selectpaymentcontainer" onclick="agree()">
+                        <div class="outercircle">
+                            <div id="innercircle5">
+                            </div>
+                        </div>
+                    </a>
+                    <p style="margin-left: 5px;">I have read and accepted the Maxx Gaming’s terms and conditions*</p>
+                </div>
+                <a class="placeorder center" href="../html/confirmation.html">
+                    Place Order
+                </a>
             </div>
-            <div class="h2container"><h2>Order Summary</h2></div>
-            <div class="h2container"><h2>Payment Method</h2></div>
         </div>
         <!-- column 2 -->
         <div class="column2">
@@ -114,5 +178,6 @@
     </footer>
     <script src="../javascript/menu.js"></script>
     <script src="../javascript/shoptitle.js"></script>
+    <script src="../javascript/select.js"></script>
 </body>
 </html>
