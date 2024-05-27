@@ -1,0 +1,19 @@
+/* progress bar container */
+.progresscontainer{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+/* adjust progress bar size */
+.progressbar{
+    width: auto;
+    height: auto;
+    max-width:40%;
+    max-height:40%;
+}
+
+/* size of checkout content */
+.checkoutcontainer{
+
+}
