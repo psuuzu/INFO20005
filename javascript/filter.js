@@ -51,7 +51,7 @@ let state=[
 
 //change button style and change state
 function categorychange(id,index){
-    state[index].buttonid=id //save button id
+    state[index].buttonid=id //save button id since mobile version and desktop have different ids
     // if button is not clicked, change state to clicked (state 1)
     if(state[index].state==0){
         let category = document.getElementById(id)
