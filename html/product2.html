@@ -4,8 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maxx Gaming</title>
+    <!-- large and small page css (that contains consistent css throughout the whole website) -->
     <link rel="stylesheet" media="(max-width: 800px)" href="../css/smallpage.css">
     <link rel="stylesheet" media="(min-width: 801px)" href="../css/largepage.css">
+    <!-- products component -->
+    <link rel="stylesheet" media="(max-width: 500px)" href="../css/products-small.css">
+    <link rel="stylesheet" media="(min-width: 501px)" href="../css/products-large.css">
+    <!-- 2column layout (for desktop) and single for mobile -->
+    <link rel="stylesheet" media="(min-width: 880px)" href="../css/shop-filters-large.css">
+    <link rel="stylesheet" media="(max-width: 879px)" href="../css/shop-filters-small.css">
+    <!-- layout -->
+    <link rel="stylesheet" media="(min-width: 880px)" href="../css/shop-structure-large.css">
+    <link rel="stylesheet" media="(max-width: 879px)" href="../css/shop-structure-small.css">
+    <!--indvidual product displays-->
+    <link rel="stylesheet" media="(min-width: 880px)" href="../css/individual-product-large.css">
+    <link rel="stylesheet" media="(max-width: 879px)" href="../css/individual-product-small.css">
         <!-- import orbitron font style -->
     <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
 
@@ -49,7 +62,192 @@
     <!-- ______________________________ -->
     <!-- CONTENT OF EACH PAGE GOES HERE -->
     <!-- ------------------------------ -->
-    <h1>Product2</h1>
+
+    <!-- Product display and details -->
+    <div class="individualproductcontainer">
+        <!-- column 1 -->
+        <div class="column1">
+            <div class="mainproductimage"><img src="../files/individual-product-display-images/eldenringproductdisplay.jpg" alt="Elden Ring">
+            </div>
+            <div class="otherproductimagescontainer">
+                <div class="otherproductimage">
+                    <img src="../files/individual-product-display-images/elden_ring1.png" alt="elden_ring1">
+                </div>
+                 <div class="otherproductimage">
+                    <img src="../files/individual-product-display-images/elden_ring2.png" alt="elden_ring2">
+                </div>
+                <div class="otherproductimage">
+                    <img src="../files/individual-product-display-images/elden_ring3.png" alt="elden_ring3">
+                 </div>
+                <div class="otherproductimage">
+                    <img src="../files/individual-product-display-images/elden_ring4.png" alt="elden_ring4">
+                </div>
+            </div>
+        </div>
+        <div class="othercirclecontainer">
+            <div class="othercircle1"></div>
+            <div class="othercircle"></div>
+            <div class="othercircle"></div>
+            <div class="othercircle"></div>
+            <div class="othercircle"></div>
+        </div>
+        <!-- column 2 -->
+        <div class="column2">
+            <div class="productdescriptioncontainer">
+                <h1 class="producttitle">
+                    Elden Ring
+                </h1>
+                <div class="stockandimage">   
+                    <h3 class="stock">
+                        In Stock
+                    </h3>
+                    <img src="../files/individual-product-display-images/tick-mark-sign-free-png 1.png" alt="tick">
+                </div> 
+                <p class="price">
+                    $69.95
+                </p>
+                <div class="order">
+                    <div class="quantity">
+                        <button id="decrease">-</button>
+                        <input type="text" id="quantity" value="1">
+                        <button id="increase">+</button>
+                    </div>
+                    <div class="addtocart">
+                        <button id="addtocartbutton">Add to cart</button>
+                    </div>
+                </div>
+                <div class="description">
+                    <h1 class="descriptiontitle">
+                        Description
+                    </h1>
+                    <p1 class="descriptiondetails">Elden Ring is a 2022 action role-playing game.....</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <!-- You Might Also Like -->
+    <div class="youmightalsolike">
+        <h1 class="mightlike">You might also like</h1>
+        <div style="justify-content: space-between; position: relative;" class="center">
+            <!-- left button -->
+            <a id="scrollbuttonL" onclick="scrollproduct(-100, 'productscroll')"><h1 style="font-size: 30px;"></h1></a>
+            <!-- products content -->
+            <div class="productscroll" id="productscroll">
+                <div class="product">
+                    <a class="card" href="product1.html">
+                        <!-- image -->
+                        <div class="productimage">
+                            <img src="../files/individual-product-display-images/southparksnowdayproductdisplay.jpg" alt="South Park Snow Day">
+                        </div>
+                        <!-- description -->
+                        <p class="description">South Park Snow Day</p>
+                        <!-- tag -->
+                        <div class="tagcontainer">
+                            <div class="notag center">
+                             
+                            </div>
+                        </div>
+                        <h2 class="description">$59.95</h2>
+                        <div class="addcart center">
+                            Add to Cart
+                        </div>
+                    </a>
+                    <a class="card">
+                        <!-- image -->
+                        <div class="productimage">
+                            <img src="../files/home-products/image 57.png" alt="Mario Kart 8 deluxe">
+                        </div>
+                        <!-- description -->
+                        <p class="description">Mario Kart 8 Deluxe</p>
+                        <!-- tag -->
+                        <div class="tagcontainer">
+                            <div class="notag center">
+                             
+                            </div>
+                        </div>
+                        <h2 class="description">$69</h2>
+                        <div class="addcart center">
+                            Add to Cart
+                        </div>
+                    </a>
+                    <a class="card">
+                        <!-- image -->
+                        <div class="productimage">
+                            <img src="../files/home-products/image 23.png" alt="minecraft">
+                        </div>
+                        <!-- description -->
+                        <p class="description">Minecraft for Nintendo...</p>
+                        <!-- tag -->
+                        <div class="tagcontainer">
+                            <div class="notag center">
+                             
+                            </div>
+                        </div>
+                        <h2 class="description">$39</h2>
+                        <div class="addcart center">
+                            Add to Cart
+                        </div>
+                    </a>
+                    <a class="card">
+                        <!-- image -->
+                        <div class="productimage">
+                            <img src="../files/home-products/image 5.png" alt="Hogwarts Legacy">
+                        </div>
+                        <!-- description -->
+                        <p class="description">Hogwarts Legacy</p>
+                        <!-- tag -->
+                        <div class="tagcontainer">
+                            <div class="notag center">
+                             
+                            </div>
+                        </div>
+                        <h2 class="description">$59</h2>
+                        <div class="addcart center">
+                            Add to Cart
+                        </div>
+                    </a>
+                    <a class="card">
+                        <!-- image -->
+                        <div class="productimage">
+                            <img src="../files/home-products/image 39.png" alt="Animal Crossing">
+                        </div>
+                        <!-- description -->
+                        <p class="description">Animal Crossing: New Horizons</p>
+                        <!-- tag -->
+                        <div class="tagcontainer">
+                            <div class="notag center">
+                             
+                            </div>
+                        </div>
+                        <h2 class="description">$69</h2>
+                        <div class="addcart center">
+                            Add to Cart
+                        </div>
+                    </a>
+                </div>
+            </div> 
+            <!-- right button -->
+            <a id="scrollbuttonR" onclick="scrollproduct(100, 'productscroll')"><h1 style="font-size: 30px;">></h1></a>  
+        </div>
+    </div>
+    <div class="otherinfo">
+            <button id="reviews">Reviews</button>
+            <button id="faq">FAQ</button>
+            <button id="returnspolicy">Returns Policy</button>
+    </div>
+
+
+
+
+
+
+
+
+
+
     <footer class="center" id="footer">
         <div style="margin-bottom: 10px;" id="footercontent">
             <h2>Location</h2>

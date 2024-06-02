@@ -7,8 +7,7 @@
 
 /* adjust progress bar size */
 .progressbar{
-    width: 460px;
-    height: 50px;
+    width: 85vw;
 }
 
 /* size of checkout content */
@@ -21,11 +20,12 @@
 /* checkout details */
 .column1{
     width:400px;
+    margin-bottom: 40px;
 }
 
 /* black background of h2 */
 .h2container{
-    width:100%;
+    width:100vw;
     height:40px;
     background-color: black;
     display: flex;
@@ -218,10 +218,6 @@ input[type=number] {
     align-items: center;
 }
 
-
-
-
-
 /* delivery input */
 .deliveryinput{
     max-height: 35px;
@@ -252,7 +248,115 @@ input[type=number] {
     border-radius: 5px;
     text-decoration: none;
 }
+
+
+
+
+.orderdetailtitles {
+    font-size: 14px;
+    font-family: orbitron;
+    font-weight: normal;
+    display: flex; 
+    flex-direction: row;
+    text-align: left;
+}
+
+.itemtitle {
+    margin-left: 25px;
+}
+
+.quantitytitle {
+    margin-left: 95px;
+}
+
+.pricetitle {
+    margin-left: 80px;
+}
+
+.specificorder {
+    margin: 1.5vw;
+    max-width: 90vw;
+    max-height: 30px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    align-items: center;
+
+}
+
+.item, .quantity, .price {
+    flex: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.quantity {
+    margin-left: 80px; 
+}
+
+.price {
+    margin-left: 20px;
+}
+
+.backtocartandtotal {
+    display: flex;
+    align-items: center; 
+}
+
+.deliveryandtotal {
+    margin-left: auto; 
+}
+
+.deliveryandtotal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 80px;
+}
+
+.pricescolumn {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+
+.backtocart {
+
+    margin-left: 10px;
+    background-color: var(--hovercolour);
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    width: 125px;
+    height:35px;
+    align-items: center;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
 /* order summary */
-.column2{
+.column2 {
+    display:none;
+}
+
+.coupon {
+    display:none;
+}
+
+.ordersummary {
+    display:none;
+}
+
+.editcartbutton {
     display:none;
 }

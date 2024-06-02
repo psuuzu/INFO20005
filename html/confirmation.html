@@ -6,7 +6,10 @@
     <title>Maxx Gaming</title>
     <link rel="stylesheet" media="(max-width: 800px)" href="../css/smallpage.css">
     <link rel="stylesheet" media="(min-width: 801px)" href="../css/largepage.css">
-        <!-- import orbitron font style -->
+    <!-- checkout structure -->
+    <link rel="stylesheet" media="(max-width: 800px)"href="../css/confirmation-small.css">
+    <link rel="stylesheet" media="(min-width: 801px)"href="../css/confirmation-large.css">
+    <!-- import orbitron font style -->
     <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
 
 </head>
@@ -49,7 +52,35 @@
     <!-- ______________________________ -->
     <!-- CONTENT OF EACH PAGE GOES HERE -->
     <!-- ------------------------------ -->
-    <h1>Confirmation</h1>
+    <div class="progresscontainer">
+        <img class="progressbar" src="../files/cart-details-payment/3.png" alt="progress">
+    </div>
+    <div class="confirmedpayment">
+        <div class="checkmarkconfirmationcontainer">
+            <img class="confirmationcheckmark" src="../files/confirmationcheckmark.png" alt="payment successful">
+        </div>
+        <div class="paymentconfirmedheading">
+            Payment confirmed, 
+        </div>
+        <div class="paymentconfirmedheading">
+            thank you for shopping at Maxx Gaming!
+        </div>
+        <div class="receiptemail">
+            A receipt with product details has been sent to the following email:
+        </div>
+        <div class="userinputtedemailreceipt">
+            <span id="savedEmail"></span>
+        </div>
+        <a class="backtohome" href="../index.html">
+            Back to home
+        </a>
+    </div>
+    <script src="/javascript/confirmationscreenemail.js"></script>
+</body>
+
+
+
+
     <footer class="center" id="footer">
         <div style="margin-bottom: 10px;" id="footercontent">
             <h2>Location</h2>

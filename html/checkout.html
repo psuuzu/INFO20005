@@ -67,7 +67,7 @@
             <div class="center" style="flex-direction: column;">
                 <input type="text" name="checkoutinput" placeholder="First Name" class="checkoutinput">
                 <input type="text" name="checkoutinput" placeholder="Last Name" class="checkoutinput">
-                <input type="text" name="checkoutinput" placeholder="Email Address" class="checkoutinput">
+                <input type="text" name="checkoutinput" id="emailInput" placeholder="Email Address" class="checkoutinput">
                 <input type="number" name="checkoutinput" placeholder="Phone Number" class="checkoutinput">
                 <div class="h2container"><h2>Delivery Method</h2></div>
                 <div class="center">
@@ -88,10 +88,47 @@
                 </div>
                 <input type="text" name="checkoutinput" placeholder="Delivery Address" class="deliveryinput" id="address">
             </div>
-            <p style="margin-left: 15px;">Price __</p>
+            <p style="margin-left: px; font-size: 12pt;">Price $318.85</p>
             
             <!-- order summary -->
             <div class="h2container"><h2>Order Summary</h2></div>
+            <div class="ordersummaryitemcontainer">
+                <div class="orderdetailtitles">
+                    <div class="itemtitle">Title</div>
+                    <div class="quantitytitle">Quantity</div>
+                    <div class="pricetitle">Price</div>
+                </div>
+                <div class="specificorder">
+                    <div class="item">Elden Ring</div>
+                    <div class="quantity">1</div>
+                    <div class="price">$69.95</div>
+                </div>
+                <div class="specificorder">
+                    <div class="item">South Park Sn...</div>
+                    <div class="quantity">1</div>
+                    <div class="price">$59.95</div>
+                </div>
+                <div class="specificorder">
+                    <div class="item">Call of Duty M...</div>
+                    <div class="quantity">1</div>
+                    <div class="price">$89.95</div>
+                </div>
+            </div>
+            <div class="backtocartandtotal">
+                <a class="backtocart" href="../html/cart.html">
+                    Back to cart
+                </a>
+                <div class="deliveryandtotal">
+                    <div class="deliveryandtotaltitlecolumn">
+                        <div class="delivery">Delivery</div>
+                        <div class="total">Total</div>
+                    </div>
+                    <div class="pricescolumn">
+                        <div class="deliveryprice">$99</div>
+                        <div class="totalprice">$318.85</div>
+                    </div>
+                </div>
+            </div>
             <!-- payment method -->
             <div class="h2container"><h2>Payment Method</h2></div>
             <div class="center" style="flex-direction: column;">
@@ -139,17 +176,93 @@
                     </a>
                     <p style="margin-left: 5px;">I have read and accepted the Maxx Gaming’s terms and conditions*</p>
                 </div>
-                <a class="placeorder center" href="../html/confirmation.html">
+                <a class="placeorder center" onclick="saveEmail()" href="../html/confirmation.html">
                     Place Order
                 </a>
+                <script src="/javascript/confirmationscreenemail.js"></script>
             </div>
         </div>
         <!-- column 2 -->
         <div class="column2">
-            test
+            <div class="ordersummarytitle">Summary</div>
+            <div class="column2ordersummarycontainer">
+                <div class="displayedorder">
+                    <div class="orderproductdisplay">
+                        <img src="../files/individual-product-display-images/eldenringproductdisplay.jpg" alt="Elden Ring">
+                    </div>
+                    <div class="orderseparatingline">
+                    </div>
+                    <div class="orderproducttitle">
+                        Elden Ring
+                    </div>
+                    <div class="orderquantity">
+                        X1
+                    </div>
+                    <div class="orderprice">
+                        $69.95
+                    </div>
+                </div>
+                <div class="displayedorder">
+                    <div class="orderproductdisplay">
+                        <img src="../files/individual-product-display-images/southparksnowdayproductdisplay.jpg" alt="South Park Snow Day">
+                    </div>
+                    <div class="orderseparatingline">
+                    </div>
+                    <div class="orderproducttitle">
+                        South Park Snow Day
+                    </div>
+                    <div class="orderquantity">
+                        X1
+                    </div>
+                    <div class="orderprice">
+                        $59.95
+                    </div>
+                </div>
+                <div class="displayedorder">
+                    <div class="orderproductdisplay">
+                        <img src="../files/individual-product-display-images/cod.png" alt="Call of Duty: Modern Warfare">
+                    </div>
+                    <div class="orderseparatingline">
+                    </div>
+                    <div class="orderproducttitle">
+                        Call of Duty: Modern Warfare
+                    </div>
+                    <div class="orderquantity">
+                        X1
+                    </div>
+                    <div class="orderprice">
+                        $89.95
+                    </div>
+                </div>
+            </div>
+
+            <div class="coupon">
+                <input type="text" name="checkoutinput" placeholder="Enter Coupon Code" class="couponinput">
+            </div>
+            <div class="ordersummary">
+                <div id="ordercolumns">
+                    <div id="ordersummarydetails">
+                        <div id="subtotal">Subtotal</div>
+                        <div id="delivery">Delivery</div>
+                        <div id="coupon discount">Coupon Discount</div>
+                        <div id="total">Total</div>
+                    </div>
+                    <div id="orderfigures">
+                        <div id="subtotalnumber">$219.85</div>
+                        <div id="subtotalnumber">$99</div>
+                        <div id="subtotalnumber">N/A</div>
+                        <div id="subtotalnumber">$318.85</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="editcartcontainerbutton">
+                <a class="editcartbutton" href="../html/cart.html">
+                    Edit Cart
+                </a>
+            </div>    
         </div>
     </div>
-    <h1>Checkout</h1>
     <footer class="center" id="footer">
         <div style="margin-bottom: 10px;" id="footercontent">
             <h2>Location</h2>

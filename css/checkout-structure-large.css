@@ -21,6 +21,7 @@
 /* checkout details */
 .column1{
     width:400px;
+    margin-bottom: 40px;
 }
 
 /* black background of h2 */
@@ -146,7 +147,6 @@ input[type=number] {
 
 }
 
-
 /* circle selections */
 .outercircle {
     border-radius: 50%;
@@ -252,7 +252,246 @@ input[type=number] {
     border-radius: 5px;
     text-decoration: none;
 }
+
+.orderdetailtitles {
+    font-size: 14px;
+    font-family: orbitron;
+    font-weight: normal;
+    display: flex; 
+    flex-direction: row;
+    text-align: left;
+}
+
+.itemtitle {
+    margin-left: 25px;
+}
+
+.quantitytitle {
+    margin-left: 95px;
+}
+
+.pricetitle {
+    margin-left: 80px;
+}
+
+.specificorder {
+    margin: 1.5vw;
+    max-width: 90vw;
+    max-height: 30px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    align-items: center;
+
+}
+
+.item, .quantity, .price {
+    flex: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.quantity {
+    margin-left: 80px; 
+}
+
+.price {
+    margin-left: 20px;
+}
+
+.backtocartandtotal {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.deliveryandtotal {
+    margin-left: auto; /* Push delivery and total to the right */
+}
+
+.deliveryandtotal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 80px;
+}
+
+.pricescolumn {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+
+.backtocart {
+    margin-left: 25px;
+    background-color: var(--hovercolour);
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    width: 125px;
+    height:35px;
+    align-items: center;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+
 /* order summary */
 .column2{
-    width:400px
+    margin-left: 10px;
+    width:400px;
 }
+
+.ordersummarytitle{
+    font-family: orbitron;
+    font-size: 16px;
+    margin-left: 125px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.displayedorder {
+    max-width: 340px;
+    max-height: 150px;
+    height: 150px;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    align-items: center;
+}
+
+/* styling for products in cart/order summary */
+.orderproductdisplay {
+    display: flex;
+    align-items: center; 
+}
+
+.orderproductdisplay img {
+    max-width: 100px;
+    width: 100px; 
+    height: 100px; 
+    object-fit: contain;
+}
+
+.orderseparatingline {
+    width: 1.5px; 
+    height: 80px; 
+    background-color: black; 
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.orderproducttitle {
+    flex: 1.5;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.orderquantity,
+.orderprice {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.orderproducttitle,
+.orderquantity,
+.orderprice {
+    overflow: hidden; /* Hide overflowing text */
+    white-space: wrap; /* Prevent wrapping */
+    text-overflow: ellipsis; /* Show ellipsis (...) for overflow */
+}
+
+.couponinput {
+    background-color: transparent;
+    border: none;
+    width: 330px;
+    height: 35px;
+    background-color: var(--lightgrey);
+    border-radius: 25px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 20px;
+}
+
+/* container for product details */
+.ordersummary {
+    width: 350px;
+    height: 200px;
+    background-color: var(--darkgrey);
+    border-radius: 10px;
+    display:flex;
+    margin: 5px;
+    flex-direction: column;
+}
+
+
+#ordercolumns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; /* Distribute columns evenly */
+    width: 100%; /* Ensure the columns take up the full width */
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 50;
+    color: white;
+}
+
+#ordersummarydetails,
+#orderfigures {
+    flex: 1; /* Distribute available space evenly */
+}
+
+#ordersummarydetails > div,
+#orderfigures > div {
+    margin-bottom: 30px; /* Add vertical space between divs */
+}
+
+
+#ordercolumns > div {
+    margin: 20px; /* Add some space between elements */
+}
+
+
+
+.editcartcontainerbutton {
+    display: flex;
+    margin-left: 200px;
+}
+
+.editcartbutton {
+    width: 150px;
+    height: 50px;
+    background-color: var(--hovercolour);
+    border-radius: 10px;
+    display:flex;
+    margin: 5px;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: white; 
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+

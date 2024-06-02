@@ -6,7 +6,10 @@
     <title>Maxx Gaming</title>
     <link rel="stylesheet" media="(max-width: 800px)" href="../css/smallpage.css">
     <link rel="stylesheet" media="(min-width: 801px)" href="../css/largepage.css">
-        <!-- import orbitron font style -->
+    <!-- checkout structure -->
+    <link rel="stylesheet" media="(max-width: 800px)"href="../css/cart-small.css">
+    <link rel="stylesheet" media="(min-width: 801px)"href="../css/cart-large.css">
+    <!-- import orbitron font style -->
     <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
 
 </head>
@@ -49,7 +52,110 @@
     <!-- ______________________________ -->
     <!-- CONTENT OF EACH PAGE GOES HERE -->
     <!-- ------------------------------ -->
-    <h1>Cart</h1>
+    <!-- progress bar -->
+    <div class="progresscontainer">
+        <img class="progressbar" src="../files/cart-details-payment/1.png" alt="progress">
+    </div>
+    <div class="pagetitle">
+        Cart
+    </div>
+    <div class="carttitles">
+        <div id="image">Image</div>
+        <div id="name">Name</div>
+        <div id="quantitytitle">Quantity</div>
+        <div id="price">Price</div>
+        <div></div>
+    </div>    
+    <div class="cartcontainer">
+        <div class="black-line"></div>
+        <div class="cartitemcard">
+            <div class="productincart">
+                <img src="../files/home-products/image 21.png" alt="elden ring">
+            </div>
+            <div class="vertical-line"></div>
+            <div class="nameofproduct">Elden Ring</div>
+            <div class="quantity">
+                <button id="decrease">-</button>
+                <input type="text" id="quantity" value="1">
+                <button id="increase">+</button>
+            </div>
+            <div class="priceofcartitem">$69.95</div>
+            <div class="bin">
+                <img src="../files/cart/bin.png" alt="bin">
+            </div>
+        </div>    
+        <div class="cartitemcard">
+            <div class="productincart">
+                <img src="../files/individual-product-display-images/southparksnowdayproductdisplay.jpg" alt="south park snow day">
+            </div>
+            <div class="vertical-line"></div>
+            <div class="nameofproduct">South Park Snow Day</div>
+            <div class="quantity">
+                <button id="decrease">-</button>
+                <input type="text" id="quantity" value="1">
+                <button id="increase">+</button>
+            </div>
+            <div class="priceofcartitem">$59.95</div>
+            <div class="bin">
+                <img src="../files/cart/bin.png" alt="bin">
+            </div>
+        </div>
+        <div class="cartitemcard">
+                <div class="productincart">
+                    <img src="../files/individual-product-display-images/cod.png" alt="call of duty: modern warfare">
+                </div>
+                <div class="vertical-line"></div>
+                <div class="nameofproduct">Call of Duty: Modern Warfare</div>
+                <div class="quantity">
+                    <button id="decrease">-</button>
+                    <input type="text" id="quantity" value="1">
+                    <button id="increase">+</button>
+                </div>
+                <div class="priceofcartitem">$69.95</div>
+                <div class="bin">
+                    <img src="../files/cart/bin.png" alt="bin">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="orderprocessandsummary">
+        <!-- column 1 -->
+        <div class="column1">
+            <img src="../files/cart/steps.png" alt="next steps">
+            <div id="subtotalincolumn1">Subtotal: $219.85</div>
+        </div>
+        <!-- column 2 -->
+        <div class="column2">
+            <div class="coupon">
+                <input type="text" name="checkoutinput" placeholder="Enter Coupon Code" class="couponinput">
+            </div>
+            <div class="ordersummary">
+                <div id="ordersummarytitle">Order Summary</div>
+                <div id="ordercolumns">
+                    <div id="ordersummarydetails">
+                        <div id="subtotal">Subtotal</div>
+                        <div id="delivery">Delivery</div>
+                        <div id="coupon discount">Coupon Discount</div>
+                        <div id="total">Total</div>
+                    </div>
+                    <div id="orderfigures">
+                        <div id="subtotalnumber">$219.85</div>
+                        <div id="subtotalnumber">$99</div>
+                        <div id="subtotalnumber">N/A</div>
+                        <div id="subtotalnumber">$318.85</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="checkoutcontainerbutton">
+                <a class="checkoutbutton" href="../html/checkout.html">
+                    Checkout
+                </a>
+            </div>    
+        </div>
+    </div>
+
     <footer class="center" id="footer">
         <div style="margin-bottom: 10px;" id="footercontent">
             <h2>Location</h2>
