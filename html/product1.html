@@ -4,9 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maxx Gaming</title>
+    <!-- large and small page css (that contains consistent css throughout the whole website) -->
     <link rel="stylesheet" media="(max-width: 800px)" href="../css/smallpage.css">
     <link rel="stylesheet" media="(min-width: 801px)" href="../css/largepage.css">
-        <!-- import orbitron font style -->
+    <!-- products component -->
+    <link rel="stylesheet" media="(max-width: 500px)" href="../css/products-small.css">
+    <link rel="stylesheet" media="(min-width: 501px)" href="../css/products-large.css">
+    <!-- 2column layout (for desktop) and single for mobile -->
+    <link rel="stylesheet" media="(min-width: 880px)" href="../css/shop-filters-large.css">
+    <link rel="stylesheet" media="(max-width: 879px)" href="../css/shop-filters-small.css">
+    <!-- layout -->
+    <link rel="stylesheet" media="(min-width: 880px)" href="../css/shop-structure-large.css">
+    <link rel="stylesheet" media="(max-width: 879px)" href="../css/shop-structure-small.css">
+    <!--indvidual product displays-->
+    <link rel="stylesheet" media="(min-width: 880px)" href="../css/individual-product-large.css">
+    <link rel="stylesheet" media="(max-width: 879px)" href="../css/individual-product-small.css">
+    <!-- import orbitron font style -->
     <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
 
 </head>
@@ -49,7 +62,185 @@
     <!-- ______________________________ -->
     <!-- CONTENT OF EACH PAGE GOES HERE -->
     <!-- ------------------------------ -->
-    <h1>Product1</h1>
+
+    <!-- Product display and details -->
+    <div class="individualproductcontainer">
+        <!-- column 1 -->
+        <div class="column1">
+            <div class="mainproductimage"><img src="../files/individual-product-display-images/southparksnowdayproductdisplay.jpg" alt="South Park Snow Day">
+            </div>
+            <div class="otherproductimagescontainer">
+                <div class="otherproductimage">
+                    <img src="../files/individual-product-display-images/south_park_snow_day_1 1.png" alt="south_park_snow_day_1">
+                </div>
+                 <div class="otherproductimage">
+                    <img src="../files/individual-product-display-images/south_park_snow_day_1 2.png" alt="south_park_snow_day_2">
+                </div>
+                <div class="otherproductimage">
+                    <img src="../files/individual-product-display-images/south_park_snow_day_1 3.png" alt="south_park_snow_day_3">
+                 </div>
+                <div class="otherproductimage">
+                    <img src="../files/individual-product-display-images/south_park_snow_day_1 4.png" alt="south_park_snow_day_4">
+                </div>
+            </div>
+        </div>
+        <div class="othercirclecontainer">
+            <div class="othercircle1"></div>
+            <div class="othercircle"></div>
+            <div class="othercircle"></div>
+            <div class="othercircle"></div>
+            <div class="othercircle"></div>
+        </div>
+        <!-- column 2 -->
+        <div class="column2">
+            <div class="productdescriptioncontainer">
+                <h1 class="producttitle">
+                    South Park Snow Day!
+                </h1>
+                <div class="stockandimage">   
+                    <h3 class="stock">
+                        In Stock
+                    </h3>
+                    <img src="../files/individual-product-display-images/tick-mark-sign-free-png 1.png" alt="tick">
+                </div> 
+                <p class="price">
+                    $59.95
+                </p>
+                <div class="order">
+                    <div class="quantity">
+                        <button id="decrease">-</button>
+                        <input type="text" id="quantity" value="1">
+                        <button id="increase">+</button>
+                    </div>
+                    <div class="addtocart">
+                        <button id="addtocartbutton" onclick="addToCart()">Add to cart</button>
+                        <!-- My attempt at a cart button changing the cart image to a cart with a 1 -->
+                    </div>
+                    <script src="/javascript/addtocart.js"></script>
+                </div>
+                <div class="description">
+                    <h1 class="descriptiontitle">
+                        Description
+                    </h1>
+                    <p1 class="descriptiondetails">South Park: Snow Day! is a 2024 action-adventure game......</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <!-- You Might Also Like -->
+    <div class="youmightalsolike">
+        <h1 class="mightlike">You might also like</h1>
+        <div style="justify-content: space-between; position: relative;" class="center">
+            <!-- left button -->
+            <a id="scrollbuttonL" onclick="scrollproduct(-100, 'productscroll')"><h1 style="font-size: 30px;"></h1></a>
+            <!-- products content -->
+            <div class="productscroll" id="productscroll">
+                <div class="product">
+                    <a class="card" href="product2.html">
+                        <!-- image -->
+                        <div class="productimage">
+                            <img src="../files/home-products/image 21.png" alt="elden ring">
+                        </div>
+                        <!-- description -->
+                        <p class="description">Elden Ring</p>
+                        <!-- tag -->
+                        <div class="tagcontainer">
+                            <div class="notag center">
+                             
+                            </div>
+                        </div>
+                        <h2 class="description">$59.95</h2>
+                        <div class="addcart center">
+                            Add to Cart
+                        </div>
+                    </a>
+                    <a class="card">
+                        <!-- image -->
+                        <div class="productimage">
+                            <img src="../files/home-products/image 57.png" alt="Mario Kart 8 deluxe">
+                        </div>
+                        <!-- description -->
+                        <p class="description">Mario Kart 8 Deluxe</p>
+                        <!-- tag -->
+                        <div class="tagcontainer">
+                            <div class="notag center">
+                             
+                            </div>
+                        </div>
+                        <h2 class="description">$69</h2>
+                        <div class="addcart center">
+                            Add to Cart
+                        </div>
+                    </a>
+                    <a class="card">
+                        <!-- image -->
+                        <div class="productimage">
+                            <img src="../files/home-products/image 23.png" alt="minecraft">
+                        </div>
+                        <!-- description -->
+                        <p class="description">Minecraft for Nintendo...</p>
+                        <!-- tag -->
+                        <div class="tagcontainer">
+                            <div class="notag center">
+                             
+                            </div>
+                        </div>
+                        <h2 class="description">$39</h2>
+                        <div class="addcart center">
+                            Add to Cart
+                        </div>
+                    </a>
+                    <a class="card">
+                        <!-- image -->
+                        <div class="productimage">
+                            <img src="../files/home-products/image 5.png" alt="Hogwarts Legacy">
+                        </div>
+                        <!-- description -->
+                        <p class="description">Hogwarts Legacy</p>
+                        <!-- tag -->
+                        <div class="tagcontainer">
+                            <div class="notag center">
+                             
+                            </div>
+                        </div>
+                        <h2 class="description">$59</h2>
+                        <div class="addcart center">
+                            Add to Cart
+                        </div>
+                    </a>
+                    <a class="card">
+                        <!-- image -->
+                        <div class="productimage">
+                            <img src="../files/home-products/image 39.png" alt="Animal Crossing New Horizons">
+                        </div>
+                        <!-- description -->
+                        <p class="description">Animal Crossing: New Horizons</p>
+                        <!-- tag -->
+                        <div class="tagcontainer">
+                            <div class="notag center">
+                             
+                            </div>
+                        </div>
+                        <h2 class="description">$69</h2>
+                        <div class="addcart center">
+                            Add to Cart
+                        </div>
+                    </a>
+                </div>
+            </div> 
+            <!-- right button -->
+            <a id="scrollbuttonR" onclick="scrollproduct(100, 'productscroll')"><h1 style="font-size: 30px;">></h1></a>  
+        </div>
+    </div>
+    <div class="otherinfo">
+            <button id="reviews">Reviews</button>
+            <button id="faq">FAQ</button>
+            <button id="returnspolicy">Returns Policy</button>
+    </div>        
+
     <footer class="center" id="footer">
         <div style="margin-bottom: 10px;" id="footercontent">
             <h2>Location</h2>

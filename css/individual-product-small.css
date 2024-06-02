@@ -1,0 +1,249 @@
+@import url(global.css);
+/* define product container */
+.individualproductcontainer {
+    display: flex;
+    flex-direction: column; /* Stack columns vertically by default */
+    align-items: center;  
+    justify-content: center; 
+    width: 95vw;
+}
+
+/* product display */
+.column1, .column2 {
+    width: 100%; /* Make columns occupy full width by default */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Separate container for other product images */
+.otherproductimagescontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.individualproductcontainer.columnlayout .column1, 
+.individualproductcontainer.columnlayout .column2 {
+    width: auto;
+}
+
+
+
+/* display image of product */
+.mainproductimage {
+    max-width: 200px;
+    max-height: 350px;
+    overflow: hidden;
+    margin-top: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* fit image */
+.mainproductimage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* appropriately size other product images */
+.otherproductimage{
+    display:none;
+}
+
+/* other product image circles for phone display */
+.othercirclecontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.othercircle {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid var(--darkgrey);
+    margin: 5px;
+}
+
+.othercircle1 {
+    width: 20px;
+    height: 20px;
+    background-color: var(--darkgrey);
+    border: 1px solid var(--darkgrey);
+    border-radius: 50%;
+    margin: 5px;
+}
+
+/* Product container for phone display */
+/* container for product details */
+.productdescriptioncontainer{
+    width: 400px;
+    height: 300px;
+    background-color: var(--white);
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+/* title of product */
+.producttitle{
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+/* container for stock and check mark */
+.stockandimage{
+    display: flex;
+    align-items: center; 
+}
+
+/* in stock */
+.stock{
+    margin-bottom: 0;
+    margin-left:30px;
+}
+
+h3{
+    margin: 0;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: normal;
+    color: var(--green);
+
+}
+
+/* description container */
+.productdescriptioncontainer img {
+    width: 35px; 
+    height: auto; 
+    margin-left: 20px;
+}
+
+.price{
+    font-size: 35px;
+    margin-left:30px;
+    margin-top:10px;
+    margin-bottom: 10px;    
+}
+
+/* order container */
+.order{
+    display: flex;
+    align-items: center;
+}
+
+/* quantity container for adjusting amount */
+.quantity {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+
+/* styling for input quantity */
+.quantity input {
+    width: 50px;
+    text-align: center;
+    background-color: var(--lightgrey);
+    border: 1px solid var(--darkgrey);
+    padding: 20px 5px;
+}
+
+/* styling for common elements between + and - */
+.quantity button {
+    background-color: var(--darkgrey);
+    border: 1px solid var(--darkgrey);
+    padding: 20px 15px;
+    cursor: pointer;
+    color: white;
+}
+
+#increase {
+    border-radius: 0px 10px 10px 0px;
+}
+
+#decrease {
+    border-radius: 10px 0 0px 10px;
+}
+
+/* cart */
+.addtocart {
+    width: 100px;
+    background-color: var(--hovercolour);
+    border: none; 
+    padding: 20px 15px; 
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 40px; 
+}
+
+/* button for cart */
+#addtocartbutton {
+    background-color: var(--hovercolour);
+    border: none;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+}
+
+/* description */
+.descriptiontitle{
+    margin-left: 30px;
+}
+
+/* details*/
+.descriptiondetails{
+    display: block;
+    text-indent: 30px;
+    font-size: 8pt;
+}
+
+/* You might also like section */
+.mightlike {
+    display:none;
+}
+
+.youmightalsolike{
+    display:none;
+}
+
+/* Additional information */
+.otherinfo {
+    text-align: center;
+    margin: 40px 0;
+}
+
+/* Styling of additional information*/
+#reviews,
+#faq,
+#returnspolicy {
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    margin: 0 5px; /* Add space between buttons */
+    padding: 5px 10px; /* Add padding to buttons */
+    font-size: 16px;
+    font-family: orbitron;
+    font-weight: normal;
+}
+
+
+#reviews:hover,
+#faq:hover,
+#returnspolicy:hover {
+    text-decoration: underline;
+}
+
+/* Add vertical bars between buttons */
+#reviews {
+    border-right: 1px solid black;
+}
+
+#returnspolicy {
+    border-left: 1px solid black;
+}

@@ -1,0 +1,224 @@
+@import url(global.css);
+/* define product container */
+.individualproductcontainer{
+    display: flex;
+    justify-content: center;
+    max-width:100vw;
+}
+
+/* product display */
+.column1{
+    width:400px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Separate container for other product images */
+.otherproductimagescontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+/* product description*/
+.column2{
+    width:500px
+}
+
+/* display image of product */
+.mainproductimage {
+    max-width: 200px;
+    max-height: 350px;
+    overflow: hidden;
+    margin-top: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* fit image */
+.mainproductimage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* appropriately size other product images */
+.otherproductimage{
+    margin: 2px;
+    max-width: 75px;
+    width: 75px;
+    max-height: 75px;
+    height: 75px;
+    border-radius: 75px;
+    display: flex;
+    justify-content: flex-start;
+    text-decoration: none; 
+}
+
+.othercirclecontainer {
+    display: none;
+}
+
+
+/* container for product details */
+.productdescriptioncontainer{
+    width: 400px;
+    height: 400px;
+    background-color: var(--lightgrey);
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+/* title of product */
+.producttitle{
+    margin-left: 30px;
+}
+
+/* container for stock and check mark */
+.stockandimage{
+    display: flex;
+    align-items: center;
+}
+
+/* in stock */
+.stock{
+    margin-left:30px;
+}
+
+h3{
+    font-size: 14px;
+    font-family: orbitron;
+    font-weight: normal;
+    color: var(--green);
+}
+
+/* description container */
+.productdescriptioncontainer img {
+    width: 35px; 
+    height: auto; 
+    margin-left: 20px;
+}
+
+.price{
+    font-size: 25px;
+    text-align: center;    
+}
+
+/* order container */
+.order{
+    display: flex;
+    align-items: center;
+}
+
+/* quantity container for adjusting amount */
+.quantity {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+
+/* styling for input quantity */
+.quantity input {
+    width: 50px;
+    text-align: center;
+    background-color: var(--lightgrey);
+    border: 1px solid var(--darkgrey);
+    padding: 20px 5px;
+}
+
+/* styling for common elements between + and - */
+.quantity button {
+    background-color: var(--darkgrey);
+    border: 1px solid var(--darkgrey);
+    padding: 20px 15px;
+    cursor: pointer;
+    color: white;
+}
+
+#increase {
+    border-radius: 0px 10px 10px 0px;
+}
+
+#decrease {
+    border-radius: 10px 0 0px 10px;
+}
+
+/* cart */
+.addtocart {
+    width: 100px;
+    background-color: var(--hovercolour);
+    border: none; 
+    padding: 20px 15px; 
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 40px; 
+}
+
+/* button for cart */
+#addtocartbutton {
+    background-color: var(--hovercolour);
+    border: none;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+}
+
+/* description */
+.descriptiontitle{
+    margin-left: 30px;
+}
+
+/* details*/
+.descriptiondetails{
+    display: block;
+    text-indent: 30px;
+    font-size: 8pt;
+}
+
+/* You might also like section */
+.mightlike {
+    margin-left: 100px;
+    margin-top: 40px; 
+    margin-bottom: 20px; 
+}
+
+/* Additional information */
+.otherinfo {
+    text-align: center;
+    margin: 40px 0;
+}
+
+/* Styling of additional information*/
+#reviews,
+#faq,
+#returnspolicy {
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    margin: 0 10px; /* Add space between buttons */
+    padding: 5px 10px; /* Add padding to buttons */
+    font-size: 18px;
+    font-family: orbitron;
+    font-weight: normal;
+}
+
+
+#reviews:hover,
+#faq:hover,
+#returnspolicy:hover {
+    text-decoration: underline;
+}
+
+/* Add vertical bars between buttons */
+#reviews {
+    border-right: 1px solid black;
+}
+
+#returnspolicy {
+    border-left: 1px solid black;
+}
