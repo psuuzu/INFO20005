@@ -1,4 +1,4 @@
-let images = ["files/promo/promo1.jpg", "files/promo/promo2.jpg", "files/promo/promo3.jpg", "files/promo/promo4.jpg", "files/promo/promo5.jpg",]
+let images = ["files/Promo/promo1.jpg", "files/Promo/promo2.jpg", "files/Promo/promo3.jpg", "files/Promo/promo4.jpg", "files/Promo/promo5.jpg",]
 //first image starts with first source of the array, second starts with the second...
 let firstimage=0
 let secondimage=1
